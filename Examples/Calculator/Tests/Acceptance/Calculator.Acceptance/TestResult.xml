@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\Calculator.Acceptance.csproj" total="18" errors="0" failures="0" not-run="0" inconclusive="18" ignored="0" skipped="0" invalid="0" date="2011-03-28" time="14:07:58">
+  <environment nunit-version="2.5.9.10348" clr-version="2.0.50727.4952" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance" machine-name="JS001184" user="duncan.butler" user-domain="JOBSERVE" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite type="Project" name="D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\Calculator.Acceptance.csproj" executed="True" result="Inconclusive" success="False" time="0.954" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\bin\Debug\Calculator.Acceptance.dll" executed="True" result="Inconclusive" success="False" time="0.935" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Calculator" executed="True" result="Inconclusive" success="False" time="0.929" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Acceptance" executed="True" result="Inconclusive" success="False" time="0.926" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Features" executed="True" result="Inconclusive" success="False" time="0.924" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="AdditionFeature" description="Addition" executed="True" result="Inconclusive" success="False" time="0.782" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="FindTheSumOfTwoNumbers" description="Find the sum of two numbers" executed="True" result="Inconclusive" success="False" time="0.697" asserts="0">
+                            <results>
+                              <test-case name="Calculator.Acceptance.Features.AdditionFeature.FindTheSumOfTwoNumbers(&quot;1&quot;,&quot;0&quot;,&quot;1&quot;)" executed="True" result="Inconclusive" success="False" time="0.647" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a Calculating Individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '1'")]
+    public void ThenIShouldSeeTheAnswer1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to add: the number '1' to the number '0'")]
+    public void WhenIAttemptToAddTheNumber1ToTheNumber0()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.AdditionFeature.FindTheSumOfTwoNumbers(&quot;0&quot;,&quot;0&quot;,&quot;0&quot;)" executed="True" result="Inconclusive" success="False" time="0.011" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a Calculating Individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '0'")]
+    public void ThenIShouldSeeTheAnswer0()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to add: the number '0' to the number '0'")]
+    public void WhenIAttemptToAddTheNumber0ToTheNumber0()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.AdditionFeature.FindTheSumOfTwoNumbers(&quot;10&quot;,&quot;9&quot;,&quot;19&quot;)" executed="True" result="Inconclusive" success="False" time="0.008" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a Calculating Individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '19'")]
+    public void ThenIShouldSeeTheAnswer19()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to add: the number '10' to the number '9'")]
+    public void WhenIAttemptToAddTheNumber10ToTheNumber9()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.AdditionFeature.FindTheSumOfTwoNumbers(&quot;1&quot;,&quot;1&quot;,&quot;2&quot;)" executed="True" result="Inconclusive" success="False" time="0.008" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a Calculating Individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '2'")]
+    public void ThenIShouldSeeTheAnswer2()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to add: the number '1' to the number '1'")]
+    public void WhenIAttemptToAddTheNumber1ToTheNumber1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.AdditionFeature.FindTheSumOfTwoNumbers(&quot;0&quot;,&quot;1&quot;,&quot;1&quot;)" executed="True" result="Inconclusive" success="False" time="0.009" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a Calculating Individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '1'")]
+    public void ThenIShouldSeeTheAnswer1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to add: the number '0' to the number '1'")]
+    public void WhenIAttemptToAddTheNumber0ToTheNumber1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="APlaceToStartFeature" description="A Place to Start" executed="True" result="Inconclusive" success="False" time="0.008" asserts="0">
+                        <results>
+                          <test-case name="Calculator.Acceptance.Features.APlaceToStartFeature.LetSBegin" description="Let's Begin" executed="True" result="Inconclusive" success="False" time="0.008" asserts="0">
+                            <reason>
+                              <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a Calculating Individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '0'")]
+    public void ThenIShouldSeeTheAnswer0()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to switch on the calculator")]
+    public void WhenIAttemptToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                            </reason>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="ComplexCalculationsFeature" description="Complex Calculations" executed="True" result="Inconclusive" success="False" time="0.035" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="GetTheResultOfAMoreComplexCalculation" description="Get the result of a more complex calculation" executed="True" result="Inconclusive" success="False" time="0.033" asserts="0">
+                            <results>
+                              <test-case name="Calculator.Acceptance.Features.ComplexCalculationsFeature.GetTheResultOfAMoreComplexCalculation(&quot;10 + 5 - 3 - 12 =&quot;,&quot;0&quot;)" executed="True" result="Inconclusive" success="False" time="0.014" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a calculating individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '0'")]
+    public void ThenIShouldSeeTheAnswer0()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to calculate: with the following '10 \+ 5 - 3 - 12 ='")]
+    public void WhenIAttemptToCalculateWithTheFollowing105_3_12()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.ComplexCalculationsFeature.GetTheResultOfAMoreComplexCalculation(&quot;10 + 5 - 3 =&quot;,&quot;12&quot;)" executed="True" result="Inconclusive" success="False" time="0.008" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a calculating individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '12'")]
+    public void ThenIShouldSeeTheAnswer12()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to calculate: with the following '10 \+ 5 - 3 ='")]
+    public void WhenIAttemptToCalculateWithTheFollowing105_3()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.ComplexCalculationsFeature.GetTheResultOfAMoreComplexCalculation(&quot;1 + 1 + 1 =&quot;,&quot;3&quot;)" executed="True" result="Inconclusive" success="False" time="0.008" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a calculating individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '3'")]
+    public void ThenIShouldSeeTheAnswer3()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to calculate: with the following '1 \+ 1 \+ 1 ='")]
+    public void WhenIAttemptToCalculateWithTheFollowing111()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SubtractionFeature" description="Subtraction" executed="True" result="Inconclusive" success="False" time="0.040" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="FindTheResultOfSubtractingTwoNumbers" description="Find the result of subtracting two numbers" executed="True" result="Inconclusive" success="False" time="0.038" asserts="0">
+                            <results>
+                              <test-case name="Calculator.Acceptance.Features.SubtractionFeature.FindTheResultOfSubtractingTwoNumbers(&quot;5&quot;,&quot;10&quot;,&quot;5&quot;)" executed="True" result="Inconclusive" success="False" time="0.010" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a Calculating Individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '5'")]
+    public void ThenIShouldSeeTheAnswer5()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to subtract: the number '5' from the number '10'")]
+    public void WhenIAttemptToSubtractTheNumber5FromTheNumber10()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.SubtractionFeature.FindTheResultOfSubtractingTwoNumbers(&quot;0&quot;,&quot;0&quot;,&quot;0&quot;)" executed="True" result="Inconclusive" success="False" time="0.008" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a Calculating Individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '0'")]
+    public void ThenIShouldSeeTheAnswer0()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to subtract: the number '0' from the number '0'")]
+    public void WhenIAttemptToSubtractTheNumber0FromTheNumber0()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.SubtractionFeature.FindTheResultOfSubtractingTwoNumbers(&quot;0&quot;,&quot;1&quot;,&quot;1&quot;)" executed="True" result="Inconclusive" success="False" time="0.008" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a Calculating Individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '1'")]
+    public void ThenIShouldSeeTheAnswer1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to subtract: the number '0' from the number '1'")]
+    public void WhenIAttemptToSubtractTheNumber0FromTheNumber1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.SubtractionFeature.FindTheResultOfSubtractingTwoNumbers(&quot;1&quot;,&quot;1&quot;,&quot;0&quot;)" executed="True" result="Inconclusive" success="False" time="0.010" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a Calculating Individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '0'")]
+    public void ThenIShouldSeeTheAnswer0()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to subtract: the number '1' from the number '1'")]
+    public void WhenIAttemptToSubtractTheNumber1FromTheNumber1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="TypicalCalculatorWorkflowFeature" description="Typical Calculator Workflow" executed="True" result="Inconclusive" success="False" time="0.048" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="SeeWhatIExpectBasedOnSpecificInteractions" description="See what I expect based on specific interactions" executed="True" result="Inconclusive" success="False" time="0.046" asserts="0">
+                            <results>
+                              <test-case name="Calculator.Acceptance.Features.TypicalCalculatorWorkflowFeature.SeeWhatIExpectBasedOnSpecificInteractions(&quot;1 + = =&quot;,&quot;3&quot;)" executed="True" result="Inconclusive" success="False" time="0.010" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a calculating individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '3'")]
+    public void ThenIShouldSeeTheAnswer3()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to calculate: with the following '1 \+ = ='")]
+    public void WhenIAttemptToCalculateWithTheFollowing1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.TypicalCalculatorWorkflowFeature.SeeWhatIExpectBasedOnSpecificInteractions(&quot;1 + 1 = 5 + =&quot;,&quot;10&quot;)" executed="True" result="Inconclusive" success="False" time="0.008" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a calculating individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '10'")]
+    public void ThenIShouldSeeTheAnswer10()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to calculate: with the following '1 \+ 1 = 5 \+ ='")]
+    public void WhenIAttemptToCalculateWithTheFollowing115()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.TypicalCalculatorWorkflowFeature.SeeWhatIExpectBasedOnSpecificInteractions(&quot;1 + =&quot;,&quot;2&quot;)" executed="True" result="Inconclusive" success="False" time="0.009" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a calculating individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '2'")]
+    public void ThenIShouldSeeTheAnswer2()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to calculate: with the following '1 \+ ='")]
+    public void WhenIAttemptToCalculateWithTheFollowing1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.TypicalCalculatorWorkflowFeature.SeeWhatIExpectBasedOnSpecificInteractions(&quot;1 - =&quot;,&quot;0&quot;)" executed="True" result="Inconclusive" success="False" time="0.008" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a calculating individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '0'")]
+    public void ThenIShouldSeeTheAnswer0()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to calculate: with the following '1 - ='")]
+    public void WhenIAttemptToCalculateWithTheFollowing1_()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="Calculator.Acceptance.Features.TypicalCalculatorWorkflowFeature.SeeWhatIExpectBasedOnSpecificInteractions(&quot;1 =&quot;,&quot;1&quot;)" executed="True" result="Inconclusive" success="False" time="0.008" asserts="0">
+                                <reason>
+                                  <message><![CDATA[No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"I am a calculating individual")]
+    public void GivenIAmACalculatingIndividual()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"I was able to switch on the calculator")]
+    public void GivenIWasAbleToSwitchOnTheCalculator()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"I should see the answer '1'")]
+    public void ThenIShouldSeeTheAnswer1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"I attempt to calculate: with the following '1 ='")]
+    public void WhenIAttemptToCalculateWithTheFollowing1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+]]></message>
+                                </reason>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

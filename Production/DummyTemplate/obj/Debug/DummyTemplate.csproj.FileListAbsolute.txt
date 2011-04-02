@@ -1,0 +1,26 @@
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\DummyTemplate.dll.config
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\DummyTemplate.dll
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\DummyTemplate.pdb
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\nunit.framework.dll
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\nunit.mocks.dll
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\pnunit.framework.dll
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\TechTalk.SpecFlow.dll
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\nunit.framework.xml
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\obj\Debug\ResolveAssemblyReference.cache
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\obj\Debug\DummyTemplate.dll
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\obj\Debug\DummyTemplate.pdb
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\SpecSalad.dll
+D:\My Source Files\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\SpecSalad.pdb
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\DummyTemplate.dll.config
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\DummyTemplate.dll
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\DummyTemplate.pdb
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\nunit.framework.dll
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\nunit.mocks.dll
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\pnunit.framework.dll
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\SpecSalad.dll
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\SpecSalad.pdb
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\bin\Debug\nunit.framework.xml
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\obj\Debug\DummyTemplate.dll
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Production\DummyTemplate\obj\Debug\DummyTemplate.pdb

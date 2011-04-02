@@ -1,0 +1,36 @@
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.Specifications.dll
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.Specifications.pdb
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.dll
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.dll
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.pdb
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.pdb
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.dll
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.pdb
+D:\My Source Files\nCukeSalad\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.Specifications.dll
+D:\My Source Files\nCukeSalad\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.Specifications.pdb
+D:\My Source Files\nCukeSalad\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.dll
+D:\My Source Files\nCukeSalad\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.dll
+D:\My Source Files\nCukeSalad\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.pdb
+D:\My Source Files\nCukeSalad\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.pdb
+D:\My Source Files\nCukeSalad\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\ResolveAssemblyReference.cache
+D:\My Source Files\nCukeSalad\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.dll
+D:\My Source Files\nCukeSalad\nCukeSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.pdb
+D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.Specifications.dll
+D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.Specifications.pdb
+D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.dll
+D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.dll
+D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.pdb
+D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.pdb
+D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\ResolveAssemblyReference.cache
+D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.dll
+D:\My Source Files\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.pdb
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.Specifications.dll
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.Specifications.pdb
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.dll
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.dll
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.pdb
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.pdb
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.dll
+C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.pdb

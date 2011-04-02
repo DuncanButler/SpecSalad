@@ -1,0 +1,1 @@
+"D:\My Source Files\Package Building\tools\NuGet.exe" pack "D:\My Source Files\Package Building\SpecSalad\SpecSalad.nuspec"

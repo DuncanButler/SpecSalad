@@ -1,0 +1,146 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Tasks/f:Calculate.cs" caret="33" fromTop="2" />
+      <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Tasks/f:Subtract.cs" caret="94" fromTop="4" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Actor.cs" caret="1671" fromTop="37" />
+      <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Features/f:a_place_to_start1.feature.cs" caret="770" fromTop="18" />
+      <File id="F8DFCC46-BC8C-41FA-B871-35AEA2ACFF32/f:TestActorsAndRoles.cs" caret="894" fromTop="20" />
+      <File id="C9D5652C-6E00-479A-ADF6-063745668C51/f:CalculatorSpecifications.cs" caret="4561" fromTop="27" />
+      <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Features/f:addition.feature" caret="0" fromTop="0" />
+      <File id="F1839764-E17D-4F1E-A725-03EB597F2063/f:app.config" caret="1051" fromTop="11" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Roles/f:MathIdiot.cs" caret="250" fromTop="14" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Features/f:Example.feature" caret="263" fromTop="8" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:Add.cs" caret="420" fromTop="17" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:SwitchOnTheCalculator.cs" caret="278" fromTop="13" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:SeeTheAnswer.cs" caret="250" fromTop="12" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/f:app.config" caret="1070" fromTop="28" />
+      <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Roles/f:CalculatingIndividual.cs" caret="0" fromTop="0" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Task.cs" caret="56" fromTop="2" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Role.cs" caret="0" fromTop="0" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:SaladDirector.cs" caret="871" fromTop="25" />
+      <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Features/f:a_place_to_start.feature" caret="0" fromTop="0" />
+      <File id="0EED1077-C9B5-4948-BBC2-B27DB6DEC704/f:TheCalculator.cs" caret="410" fromTop="17" />
+      <File id="0EED1077-C9B5-4948-BBC2-B27DB6DEC704/f:Operands.cs" caret="0" fromTop="0" />
+      <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Tasks/f:Add.cs" caret="0" fromTop="0" />
+      <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Tasks/f:SeeTheAnswer.cs" caret="0" fromTop="0" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:NeedingSpecifics.cs" caret="614" fromTop="23" />
+      <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Tasks/f:SwitchOnTheCalculator.cs" caret="0" fromTop="0" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/d:Steps/f:CukeSalad.cs" caret="1181" fromTop="30" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Actor.cs" caret="1608" fromTop="35" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:SaladDirector.cs" caret="694" fromTop="22" />
+      <File id="F8DFCC46-BC8C-41FA-B871-35AEA2ACFF32/f:TestActorsAndRoles.cs" caret="503" fromTop="21" />
+      <File id="F8DFCC46-BC8C-41FA-B871-35AEA2ACFF32/f:TestActorsAndRoles.cs" caret="829" fromTop="34" />
+      <File id="F8DFCC46-BC8C-41FA-B871-35AEA2ACFF32/f:TestActorsAndRoles.cs" caret="1134" fromTop="29" />
+      <File id="F8DFCC46-BC8C-41FA-B871-35AEA2ACFF32/f:TestActorsAndRoles.cs" caret="1345" fromTop="37" />
+      <File id="0EED1077-C9B5-4948-BBC2-B27DB6DEC704/f:Operands.cs" caret="1487" fromTop="67" />
+      <File id="0EED1077-C9B5-4948-BBC2-B27DB6DEC704/f:TheCalculator.cs" caret="1946" fromTop="79" />
+      <File id="C9D5652C-6E00-479A-ADF6-063745668C51/f:CalculatorSpecifications.cs" caret="4718" fromTop="17" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/f:app.config" caret="1051" fromTop="20" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Features/f:Example.feature" caret="292" fromTop="8" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:SwitchOnTheCalculator.cs" caret="98" fromTop="5" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Task.cs" caret="67" fromTop="4" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Task.cs" caret="184" fromTop="9" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Task.cs" caret="222" fromTop="7" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Task.cs" caret="229" fromTop="8" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Task.cs" caret="67" fromTop="2" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:Add.cs" caret="107" fromTop="5" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:Add.cs" caret="399" fromTop="14" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:SwitchOnTheCalculator.cs" caret="260" fromTop="11" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:SeeTheAnswer.cs" caret="114" fromTop="5" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:SeeTheAnswer.cs" caret="202" fromTop="9" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Roles/f:MathIdiot.cs" caret="420" fromTop="14" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Roles/f:MathIdiot.cs" caret="333" fromTop="20" />
+      <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Roles/f:MathIdiot.cs" caret="163" fromTop="8" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:NeedingSpecifics.cs" caret="1065" fromTop="29" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:NeedingSpecifics.cs" caret="837" fromTop="26" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/d:Steps/f:CukeSalad.cs" caret="1447" fromTop="40" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/d:Steps/f:CukeSalad.cs" caret="1447" fromTop="31" />
+      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/d:Steps/f:CukeSalad.cs" caret="1161" fromTop="28" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="return" priority="144" />
+      <Item value="null" priority="86" />
+      <Item value="IApplicationTaskPerform_Task`0" priority="28" />
+      <Item value="Role" priority="173" />
+      <Item value="int" priority="86" />
+      <Item value="Details" priority="57" />
+      <Item value="public" priority="173" />
+      <Item value="void" priority="173" />
+      <Item value="char" priority="28" />
+      <Item value="ThenAttribute`0" priority="86" />
+      <Item value="info" priority="57" />
+      <Item value="specific" priority="28" />
+      <Item value="string" priority="144" />
+      <Item value="if" priority="86" />
+      <Item value="result" priority="57" />
+      <Item value="symbolise_name`0" priority="28" />
+      <Item value="i" priority="28" />
+      <Item value="Assert`0" priority="28" />
+      <Item value="expected" priority="28" />
+      <Item value="Convert`0" priority="28" />
+      <Item value="_actor" priority="28" />
+      <Item value="String`0" priority="27" />
+      <Item value="actual" priority="29" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="49" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SpecSalad.Details">
+      <Item value="Value_Of`0" priority="49" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="enter`0" priority="24" />
+      <Item value="press`0" priority="24" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="ContainsKey`0" priority="24" />
+      <Item value="Add`0" priority="24" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="24" />
+      <Item value="IsNullOrEmpty`0" priority="24" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.MatchCollection">
+      <Item value="Count" priority="24" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Match">
+      <Item value="Value" priority="49" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Trim`0" priority="24" />
+      <Item value="Split`0" priority="24" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="AreEqual`0" priority="24" />
+      <Item value="Contains`0" priority="24" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToString`0" priority="24" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SpecSalad.Actor">
+      <Item value="Answer`0" priority="24" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

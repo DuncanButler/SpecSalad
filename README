@@ -1,0 +1,10 @@
+Spec Salad
+
+A C# dot net 4.0 implementation for Spec Flow of the cucumber add on Cuke Salad
+by Antony Marcano and Riverglide.com
+
+ToDo:
+	keep up with the ruby implementation
+	produce a Nuget package amd make available on the main server
+		
+Writing Spec Flow specifications without step definitions

@@ -9,41 +9,52 @@ namespace SpecSalad
     [Binding]
     public class CukeSalad
     {
-        Actor _actor;
+        Actor TheActor
+        {
+            get { return ScenarioContext.Current.Get<Actor>(); }
+            set { ScenarioContext.Current.Set(value); }
+        }
 
         [Given(@"I am a (.*)")]
         public void Given_I_am_a(string role)
         {
             Director director = new SaladDirector();
 
-            _actor = new Actor(role, director);
+            TheActor = new Actor(role, director);
         }
 
         [Given(@"I (?:attempt to|was able to)? ([A-Z a-z_-]*)(?:: (.*))?")]
         public void Given_I_was_able_to(string task, string details)
         {
-            _actor.Perform(task, details);
+            TheActor.Perform(task, details);
         }
 
         [When(@"I (?:attempt to|was able to)? ([A-Z a-z_-]*)(?:: (.*))?")]
         public void When_I_attempt_to(string task, string details)
         {
-            _actor.Perform(task, details);
+            TheActor.Perform(task, details);
         }
 
         [Then(@"I see text containing ([^']*) '([^']*)'")]
         public void Then_I_should_containing(string question, string expected)
         {
-            IEnumerable<String> actual = (IEnumerable<string>) _actor.Answer(question);
-
+            var actual = (IEnumerable<string>) TheActor.Answer(question);
 
             Assert.Contains(expected, (ICollection) actual);
         }
 
-        [Then(@"I should ([^']*) '([^']*)'")]
-        public void Then_I_should(string question, string expected)
+        [Then("I shouldn't ([^']*) '([^']*)'")]
+        public void Then_I_should_not(string question, string notExpected)
         {
-            string actual = Convert.ToString(_actor.Answer(question));
+            string actual = Convert.ToString(TheActor.Answer(question));
+
+            Assert.AreNotEqual(notExpected, actual);
+        }
+
+        [Then(@"I should ([^']*) '([^']*)'")]
+        public void Then_I_should_see(string question, string expected)
+        {
+            string actual = Convert.ToString(TheActor.Answer(question));
 
             Assert.AreEqual(expected, actual);
         }

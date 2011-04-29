@@ -15,18 +15,17 @@
       <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:SwitchOnTheCalculator.cs" caret="278" fromTop="13" />
       <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:SeeTheAnswer.cs" caret="250" fromTop="12" />
       <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/f:app.config" caret="1070" fromTop="28" />
-      <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Roles/f:CalculatingIndividual.cs" caret="0" fromTop="0" />
-      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Task.cs" caret="56" fromTop="2" />
-      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Role.cs" caret="0" fromTop="0" />
       <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:SaladDirector.cs" caret="871" fromTop="25" />
       <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Features/f:a_place_to_start.feature" caret="0" fromTop="0" />
-      <File id="0EED1077-C9B5-4948-BBC2-B27DB6DEC704/f:TheCalculator.cs" caret="410" fromTop="17" />
-      <File id="0EED1077-C9B5-4948-BBC2-B27DB6DEC704/f:Operands.cs" caret="0" fromTop="0" />
       <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Tasks/f:Add.cs" caret="0" fromTop="0" />
       <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Tasks/f:SeeTheAnswer.cs" caret="0" fromTop="0" />
       <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:NeedingSpecifics.cs" caret="614" fromTop="23" />
       <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Tasks/f:SwitchOnTheCalculator.cs" caret="0" fromTop="0" />
       <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/d:Steps/f:CukeSalad.cs" caret="1181" fromTop="30" />
+      <File id="F1839764-E17D-4F1E-A725-03EB597F2063/d:Roles/f:CalculatingIndividual.cs" caret="0" fromTop="0" />
+      <File id="7682349E-82DA-4DED-8573-29A47512821D/d:Features/f:Start_Feature.feature" caret="0" fromTop="0" />
+      <File id="0EED1077-C9B5-4948-BBC2-B27DB6DEC704/f:Operands.cs" caret="0" fromTop="0" />
+      <File id="0EED1077-C9B5-4948-BBC2-B27DB6DEC704/f:TheCalculator.cs" caret="0" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
       <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Actor.cs" caret="1608" fromTop="35" />
@@ -41,11 +40,6 @@
       <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/f:app.config" caret="1051" fromTop="20" />
       <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Features/f:Example.feature" caret="292" fromTop="8" />
       <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:SwitchOnTheCalculator.cs" caret="98" fromTop="5" />
-      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Task.cs" caret="67" fromTop="4" />
-      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Task.cs" caret="184" fromTop="9" />
-      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Task.cs" caret="222" fromTop="7" />
-      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Task.cs" caret="229" fromTop="8" />
-      <File id="9608581F-6C5C-4CD5-8288-12CC46358B62/f:Task.cs" caret="67" fromTop="2" />
       <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:Add.cs" caret="107" fromTop="5" />
       <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:Add.cs" caret="399" fromTop="14" />
       <File id="099C07BA-CA3B-4816-B18B-77741D1E8028/d:Tasks/f:SwitchOnTheCalculator.cs" caret="260" fromTop="11" />

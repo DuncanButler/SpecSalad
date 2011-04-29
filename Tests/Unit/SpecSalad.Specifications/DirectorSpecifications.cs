@@ -4,7 +4,7 @@ using Machine.Specifications;
 namespace SpecSalad.Specifications
 {
     [Subject("Director")]
-    public class returns_the_classe_instances : DirectorContext
+    public class returns_the_class_instances : DirectorContext
     {
         It for_a_directive_for_something =
             () => _director.How_Do_I_Perform("Something").ShouldBeOfType<Something>();
@@ -14,11 +14,11 @@ namespace SpecSalad.Specifications
 
         It throws_exception_when_item_cannot_be_found =
             () =>
-            Catch.Exception(() => _director.How_Do_I_Perform("something that is not there")).ShouldBeOfType<ArgumentException>();
+            Catch.Exception(() => _director.How_Do_I_Perform("something that is not there")).ShouldBeOfType<SaladException>();
 
         It exception_thrown_has_expected_message =
             () => Catch.Exception(() => _director.How_Do_I_Perform("Something that is not there")).Message.ShouldEqual
-                      ("You need to define the role or task 'Something that is not there'");	
+                      ("You need to define the role or task 'SomethingThatIsNotThere'");	
     }
 
     public class DirectorContext

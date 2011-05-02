@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Collections.Specialized;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
@@ -53,7 +51,7 @@ namespace SpecSalad
         [Then(@"(?:I|you) should ([^']*) that includes: (.*)")]
         public void ThenQuestionIncludes(string theQuestion, string expectedContent)
         {
-            Assert.Contains(expectedContent,(ICollection) TheActor.Answer(theQuestion));
+            Assert.Contains(expectedContent, (ICollection) TheActor.Answer(theQuestion));
         }
     }
 }

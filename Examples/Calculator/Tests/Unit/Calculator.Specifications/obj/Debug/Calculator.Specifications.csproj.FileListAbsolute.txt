@@ -34,3 +34,12 @@ C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculato
 C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.dll
 C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.pdb
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.Specifications.dll
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.Specifications.pdb
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.dll
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.dll
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.pdb
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.pdb
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.dll
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.pdb

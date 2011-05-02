@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
@@ -15,48 +16,44 @@ namespace SpecSalad
             set { ScenarioContext.Current.Set(value); }
         }
 
-        [Given(@"I am a (.*)")]
-        public void Given_I_am_a(string role)
+        [Given(@"(?:I am|you are) a ([a-zA-Z ]+)")]
+        public void GivenRoleSpecification(string role)
         {
             Director director = new SaladDirector();
 
             TheActor = new Actor(role, director);
         }
 
-        [Given(@"I (?:attempt to|was able to)? ([A-Z a-z_-]*)(?:: (.*))?")]
-        public void Given_I_was_able_to(string task, string details)
+        [Given(@"(?:I|you) (?:attempt to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:: (.*))?")]
+        public void GivenTaskSpecification(string task, string details)
         {
             TheActor.Perform(task, details);
         }
 
-        [When(@"I (?:attempt to|was able to)? ([A-Z a-z_-]*)(?:: (.*))?")]
-        public void When_I_attempt_to(string task, string details)
+        [When(@"(?:I|you) (?:attempt to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:: (.*))?")]
+        public void WhenTaskSpecification(string task, string details)
         {
             TheActor.Perform(task, details);
         }
 
-        [Then(@"I see text containing ([^']*) '([^']*)'")]
-        public void Then_I_should_containing(string question, string expected)
+        [Then(@"(?:I|you) should ([^':]*) '([^']*)'")]
+        public void ThenAreEqualSpecification(string theQuestion, string expectedAnswer)
         {
-            var actual = (IEnumerable<string>) TheActor.Answer(question);
+            string actualAnswer = Convert.ToString(TheActor.Answer(theQuestion));
 
-            Assert.Contains(expected, (ICollection) actual);
+            Assert.AreEqual(expectedAnswer, actualAnswer);
         }
 
-        [Then("I shouldn't ([^']*) '([^']*)'")]
-        public void Then_I_should_not(string question, string notExpected)
+        [Then(@"(?:I|you) should ([^':]+)")]
+        public void ThenAnswerQuestion(string theQuestion)
         {
-            string actual = Convert.ToString(TheActor.Answer(question));
-
-            Assert.AreNotEqual(notExpected, actual);
+            TheActor.Answer(theQuestion);
         }
 
-        [Then(@"I should ([^']*) '([^']*)'")]
-        public void Then_I_should_see(string question, string expected)
+        [Then(@"(?:I|you) should ([^']*) that includes: (.*)")]
+        public void ThenQuestionIncludes(string theQuestion, string expectedContent)
         {
-            string actual = Convert.ToString(TheActor.Answer(question));
-
-            Assert.AreEqual(expected, actual);
+            Assert.Contains(expectedContent,(ICollection) TheActor.Answer(theQuestion));
         }
     }
 }

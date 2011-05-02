@@ -3,3 +3,8 @@ C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculato
 C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\WebCalculator.Specifications\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\WebCalculator.Specifications\obj\Debug\WebCalculator.Specifications.dll
 C:\Users\duncan.butler\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\WebCalculator.Specifications\obj\Debug\WebCalculator.Specifications.pdb
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\WebCalculator.Specifications\bin\Debug\WebCalculator.Specifications.dll
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\WebCalculator.Specifications\bin\Debug\WebCalculator.Specifications.pdb
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\WebCalculator.Specifications\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\WebCalculator.Specifications\obj\Debug\WebCalculator.Specifications.dll
+C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Unit\WebCalculator.Specifications\obj\Debug\WebCalculator.Specifications.pdb

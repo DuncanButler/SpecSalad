@@ -56,7 +56,6 @@
   <Module PersistentId="System.ComponentModel.Composition, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.ComponentModel.Composition" />
   <Module PersistentId="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Web" />
   <Module PersistentId="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Windows.Forms" />
-  <Module PersistentId="7682349E-82DA-4DED-8573-29A47512821D" ModuleId="a_place_to_start.feature" />
   <Module PersistentId="0EED1077-C9B5-4948-BBC2-B27DB6DEC704" ModuleId="Calculator" />
   <Module PersistentId="C9D5652C-6E00-479A-ADF6-063745668C51" ModuleId="Calculator.Specifications" />
   <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
@@ -66,11 +65,17 @@
   <Module PersistentId="SpecSalad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="SpecSalad_1" />
   <Module PersistentId="Calculator.Acceptance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="Calculator.Acceptance_1" />
   <Module PersistentId="nCukeSalad.Specifications, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="nCukeSalad.Specifications" />
-  <Module PersistentId="a_place_to_start.feature, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="a_place_to_start.feature_1" />
   <Module PersistentId="Calculator.Specifications, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="Calculator.Specifications_1" />
   <Module PersistentId="099C07BA-CA3B-4816-B18B-77741D1E8028" ModuleId="DummyTemplate" />
   <Module PersistentId="DummyTemplate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="DummyTemplate_1" />
   <Module PersistentId="E1957CA6-437D-4C20-8090-2AE372FD607B" ModuleId="WebCalculator.Specifications" />
   <Module PersistentId="WebCalculator.Specifications, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="WebCalculator.Specifications_1" />
+  <Module PersistentId="C7F02394-C7D5-4C73-B599-CC62F84156D2" ModuleId="SpecSalad.features" />
+  <Module PersistentId="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77" ModuleId="nunit.framework_1" />
+  <Module PersistentId="nunit.mocks, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77" ModuleId="nunit.mocks_1" />
+  <Module PersistentId="pnunit.framework, Version=1.0.4109.34242, Culture=neutral, PublicKeyToken=null" ModuleId="pnunit.framework_1" />
+  <Module PersistentId="TechTalk.SpecFlow, Version=1.6.1.0, Culture=neutral, PublicKeyToken=0778194805d6db41" ModuleId="TechTalk.SpecFlow_1" />
+  <Module PersistentId="SpecSalad.features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="SpecSalad.features_1" />
+  <Module PersistentId="DummyTemplate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="DummyTemplate_2" />
   <Module PersistentId="SpecSalad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="SpecSalad_2" />
 </Modules>

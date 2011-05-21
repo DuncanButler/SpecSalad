@@ -6,7 +6,7 @@ namespace Calculator.Tasks
     {
         public override object Perform_Task()
         {
-            Role.switch_on_calculator();
+            Role.SwitchOnCalculator();
             
             return null;
         }

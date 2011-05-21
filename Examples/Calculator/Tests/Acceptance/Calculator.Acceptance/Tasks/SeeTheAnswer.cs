@@ -6,7 +6,7 @@ namespace Calculator.Tasks
     {
         public override object Perform_Task()
         {
-            return Role.look_at_the_display();
+            return Role.LookAtTheDisplay();
         }
     }
 }

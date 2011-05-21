@@ -16,11 +16,11 @@ namespace Calculator.Tasks
                 int num;
                 if (int.TryParse(item, out num))
                 {
-                    Role.enter(num);
+                    Role.Enter(num);
                 }
                 else
                 {
-                    Role.press(Convert.ToChar(item));
+                    Role.Press(Convert.ToChar(item));
                 }
             }
 

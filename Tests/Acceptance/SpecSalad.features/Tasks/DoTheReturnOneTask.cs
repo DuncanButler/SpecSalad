@@ -6,7 +6,7 @@ namespace SpecSalad.features.Tasks
     {
         public override object Perform_Task()
         {
-            return Role.SetTheAnswerTo(1);
+            return Role.Add(1);
         }
     }
 }

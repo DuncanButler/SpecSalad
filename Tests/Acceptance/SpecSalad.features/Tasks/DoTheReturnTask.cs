@@ -1,19 +1,24 @@
-﻿using System;
+﻿using System.Collections.Generic;
 
 namespace SpecSalad.features.Tasks
 {
     public class DoTheReturnTask : ApplicationTask
     {
+        readonly List<string> _knownParameterNames = new List<string>
+                                                         {
+                                                             "with_a_single_parameter",
+                                                             "with_parameter",
+                                                             "and_parameter"
+                                                         };
+
         public override object Perform_Task()
         {
-            if (string.IsNullOrEmpty(Details.Value_Of("with_a_single_parameter")))
+            foreach (var parameterName in _knownParameterNames)
             {
-                Role.SetTheAnswerTo(Convert.ToInt32(Details.Value_Of("with_parameter")));
-                Role.SetTheAnswerTo(Convert.ToInt32(Details.Value_Of("and_parameter")));
-            }
-            else
-            {
-                Role.SetTheAnswerTo(Convert.ToInt32(Details.Value_Of("with_a_single_parameter")));                
+                int paramValue;
+                int.TryParse(Details.Value_Of(parameterName), out paramValue);
+
+                Role.Add(paramValue);
             }
 
             return true;

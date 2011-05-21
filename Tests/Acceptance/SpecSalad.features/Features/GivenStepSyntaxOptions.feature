@@ -41,3 +41,9 @@ Scenario: calling given and with the syntax I did
 	And I did the return task: with a single parameter '2'
 	When I attempt to do the return task: with a single parameter '2'	
 	Then I should see the answer '4'
+
+Scenario: calling given and with the syntax including a comma instead of the colon
+	Given I am a specified role
+	And I did the return task, with a single parameter '2'
+	When I attempt to do the return task: with a single parameter '1'
+	Then I should see the answer '3'

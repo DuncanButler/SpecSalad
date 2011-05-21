@@ -22,13 +22,13 @@ namespace SpecSalad
             TheActor = new Actor(role, director);
         }
 
-        [Given(@"(?:I|you) (?:attempt to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:: (.*))?")]
+        [Given(@"(?:I|you) (?:attempt to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
         public void GivenTaskSpecification(string task, string details)
         {
             TheActor.Perform(task, details);
         }
 
-        [When(@"(?:I|you) (?:attempt to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:: (.*))?")]
+        [When(@"(?:I|you) (?:attempt to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
         public void WhenTaskSpecification(string task, string details)
         {
             TheActor.Perform(task, details);

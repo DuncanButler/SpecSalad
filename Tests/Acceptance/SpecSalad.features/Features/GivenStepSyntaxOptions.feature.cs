@@ -168,6 +168,25 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             testRunner.CollectScenarioErrors();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("calling given and with the syntax including a comma instead of the colon")]
+        public virtual void CallingGivenAndWithTheSyntaxIncludingACommaInsteadOfTheColon()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("calling given and with the syntax including a comma instead of the colon", ((string[])(null)));
+#line 45
+this.ScenarioSetup(scenarioInfo);
+#line 46
+ testRunner.Given("I am a specified role");
+#line 47
+ testRunner.And("I did the return task, with a single parameter \'2\'");
+#line 48
+ testRunner.When("I attempt to do the return task: with a single parameter \'1\'");
+#line 49
+ testRunner.Then("I should see the answer \'3\'");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
     }
 }
 #endregion

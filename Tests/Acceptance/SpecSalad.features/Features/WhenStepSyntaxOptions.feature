@@ -52,3 +52,8 @@ Scenario: calling when with the syntax I attempt to with multiple parameters
 	Given I am a specified role
 	When I attempt to do the return task: with parameter '2' and parameter '3' 
 	Then I should see the answer '5'
+
+Scenario: calling when with the syntax containing a comma instead of a colon
+	Given I am a specified role
+	When I attempt to do the return task, with parameter '2' and parameter '1'
+	Then I should see the answer '3'

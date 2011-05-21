@@ -8,7 +8,7 @@ namespace SpecSalad.features.Roles
     {
         int _theAnswer;
 
-        public bool SetTheAnswerTo(int theValue)
+        public bool Add(int theValue)
         {
             _theAnswer += theValue;
 

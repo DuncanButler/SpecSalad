@@ -10,7 +10,7 @@
     <description>using SpecFlow without step definations</description>
     <tags>SpecSalad SpecFlow .net40</tags>
     <dependencies>
-      <dependency id="SpecFlow" version="1.6.1.0" />
+      <dependency id="SpecFlow" version="1.6.1" />
 	  <dependency id="NUnit" version="2.5.10.11092" />
     </dependencies>
   </metadata>

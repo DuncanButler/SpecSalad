@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>SpecSalad</id>
+    <version>1.0</version>
+    <authors>Duncan</authors>
+    <owners>Duncan</owners>    
+    <projectUrl>https://github.com/DuncanButler/SpecSalad</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>using SpecFlow without step definations</description>
+    <tags>SpecSalad SpecFlow .net40</tags>
+    <dependencies>
+      <dependency id="SpecFlow" version="1.6.1.0" />
+	  <dependency id="NUnit" version="2.5.10.11092" />
+    </dependencies>
+  </metadata>
+</package>

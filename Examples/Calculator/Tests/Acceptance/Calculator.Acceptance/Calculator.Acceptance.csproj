@@ -90,7 +90,9 @@
     <Compile Include="Tasks\SwitchOnTheCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Features\addition.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>addition1.feature.cs</LastGenOutput>

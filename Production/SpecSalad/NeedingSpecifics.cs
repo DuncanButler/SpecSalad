@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace SpecSalad
@@ -6,6 +8,7 @@ namespace SpecSalad
     public interface Details
     {
         string Value_Of(string specific);
+        string Value();
     }
 
     public class NeedingSpecifics : Details
@@ -34,6 +37,14 @@ namespace SpecSalad
                 return info[specific];
 
             return string.Empty;
+        }
+
+        public string Value()
+        {
+            if (info.Count == 0)
+                return string.Empty;
+
+            return (from i in info select i).First().Value;
         }
 
         string symbolise_name(string name)

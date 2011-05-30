@@ -44,7 +44,8 @@ namespace SpecSalad.Specifications
             () => _specifics.Value_Of("first_thing").ShouldEqual("item");
 
         It second_pair_has_correct_value =
-            () => _specifics.Value_Of("second_thing").ShouldEqual("another");	
+            () => _specifics.Value_Of("second_thing").ShouldEqual("another");
+	
     }
 
     [Subject("Needing Specifics")]
@@ -61,6 +62,60 @@ namespace SpecSalad.Specifications
 
         It second_pair_has_correct_value =
             () => _specifics.Value_Of("second_thing").ShouldEqual("another thing");	
+    }
+
+    [Subject("Needing Specifics")]
+    public class calling_value_with_no_details_set : NeedingSpecificsContext
+    {
+        Because of =
+            () =>
+                {
+                    _result = _specifics.Value();
+                };
+
+        It returns_an_empty_string =
+            () => _result.ShouldBeEmpty();
+
+        static string _result;
+    }
+
+    [Subject("Needing Specifics")]
+    public class calling_value_with_a_single_detail_set : NeedingSpecificsContext
+    {
+        Establish context =
+            () => _specifics.Understand_The("first thing 'first' second thing 'second'");
+
+        Because of =
+            () =>
+                {
+                    _result = _specifics.Value();
+                };
+
+        It returns_the_set_value =
+            () => _result.ShouldEqual("first");
+
+        static string _result;
+    }
+
+    [Subject("Needing Specifics")]
+    public class calling_value_with_multiple_details_set : NeedingSpecificsContext
+    {
+        Establish context =
+            () =>
+                {
+                    _specifics.Understand_The("first");
+                };
+
+        Because of =
+            () =>
+                {
+                    _result = _specifics.Value();
+                };
+
+        It returns_the_first_value =
+            () => _result.ShouldEqual("first");
+
+        static string _result;
     }
 
     public class NeedingSpecificsContext

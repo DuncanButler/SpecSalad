@@ -8,7 +8,7 @@ namespace SpecSalad
     public interface Details
     {
         string Value_Of(string specific);
-        string Value();
+        string Value();        
     }
 
     public class NeedingSpecifics : Details

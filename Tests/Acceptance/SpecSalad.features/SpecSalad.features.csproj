@@ -55,6 +55,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\RoleStoringFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoleStoringFeature.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\ThenStepSyntaxOptions.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -74,15 +79,21 @@
     <Compile Include="Roles\SpecifiedRole.cs" />
     <Compile Include="Tasks\DoTheReturnOneTask.cs" />
     <Compile Include="Tasks\DoTheReturnTask.cs" />
+    <Compile Include="Tasks\RetrieveTheAnswer.cs" />
     <Compile Include="Tasks\SeeOne.cs" />
     <Compile Include="Tasks\SeeTheAnswer.cs" />
     <Compile Include="Tasks\SeeTheAnswers.cs" />
+    <Compile Include="Tasks\Store.cs" />
     <Compile Include="Tasks\TheReturnOneTask.cs" />
     <Compile Include="Tasks\TheReturnTask.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\RoleStoringFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>RoleStoringFeature.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\ThenStepSyntaxOptions.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ThenStepSyntaxOptions.feature.cs</LastGenOutput>

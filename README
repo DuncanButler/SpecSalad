@@ -60,3 +60,25 @@ SpecSalad uses a subset of the Gurkin language to parse the feature text, items 
 		This doesn't carry out any assert, but expects the task to do some custom comparison
 			Then I should compare text
 
+Task	
+To define a task, the class must inherit from the ApplicationTask base class, this base class provides the following
+additional functionality.
+
+	Perform_Task:
+		This method must be overridden, it is here that the role is called to carry out the specific task
+
+	Role
+		provides access to the current scenario role
+	
+	Details
+		This object contains all the parameters provided in the scenario step, there are two methods for extracting the
+		stored data
+			Value()        - returns the first data items value
+			Value_Of(key)  - returns the value of the given key
+	
+Role
+	To define a role, the class must inherit from ApplicationRole, this base class provides the following additional 
+	functionality.
+
+		StoreValue(key, value) - stores for the duration of the scenario a value with a given key
+		Retrieve(key)          - returns a previously stored value

@@ -55,6 +55,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\BackgoundTag.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BackgoundTag.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\RoleStoringFeature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -90,6 +95,10 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\BackgoundTag.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>BackgoundTag.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\RoleStoringFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>RoleStoringFeature.feature.cs</LastGenOutput>

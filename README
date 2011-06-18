@@ -44,10 +44,10 @@ SpecSalad uses a subset of the Gurkin language to parse the feature text, items 
 			When I did add numbers together: first number '1' second number '2'
 			And I attempt to subtract the numbers: first number '2' second number '1'
 
-	<Then | And> <I | you> should <task name>: <expected answer>
+	<Then | And> <I | you> should <task name> '<expected answer>'
 	
 		Asserts that the task name returns the expected answer using the Assert.Equals comparison function
-			Then I should see the result: 5
+			Then I should see the result '5'
 
 	<Then | And> <I | you> should <task name> that includes: <expected content>
 	

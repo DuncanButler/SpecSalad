@@ -38,10 +38,22 @@ namespace SpecSalad.Steps
             GetActor("Primary").Perform(task, details);
         }
 
+        [Given(@"There is a ([a-zA-Z ]+)")]
+        public void GivenAdditionalRoleSpecification(string role)
+        {
+            SetActor(role,new Actor(role,TheDirector));
+        }
+
         [When(@"(?:I|you) (?:attempt to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
         public void WhenTaskSpecification(string task, string details)
         {
             GetActor("Primary").Perform(task, details);
+        }
+
+        [When(@"The ([a-zA-Z ]+) (?:attempts to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
+        public void WhenTaskSpecificationWithSecondaryRole(string role, string task,string details)
+        {
+            GetActor(role).Perform(task,details);
         }
 
         [Then(@"(?:I|you) should ([^':]*) '([^']*)'")]

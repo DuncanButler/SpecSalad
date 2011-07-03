@@ -6,31 +6,46 @@ namespace SpecSalad.features.Roles
 {
     public class SpecifiedRole : ApplicationRole
     {
-        int _theAnswer;
+        int TheAnswer 
+        { 
+            get
+            {
+                object result = this.Retrieve("Total");
 
+                if (result == null)
+                    return 0;
+
+                return (int) result; 
+            }
+            set
+            {
+                this.StoreValue("Total",value);
+            }
+        }
+       
         public bool Add(int theValue)
         {
-            _theAnswer += theValue;
+            TheAnswer += theValue;
 
             return true;
         }
 
         public int GetTheAnswer()
          {
-             return _theAnswer;
+             return TheAnswer;
          }
 
         public ICollection GetTheAnswers()
         {
             var list = new List<string>();
-            list.Add(_theAnswer.ToString());
+            list.Add(TheAnswer.ToString());
 
             return list;
         }
 
         public void ShouldContainOne()
         {
-            Assert.AreEqual(1,_theAnswer);
+            Assert.AreEqual(1,TheAnswer);
         }
     }
 }

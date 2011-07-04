@@ -6,6 +6,11 @@ namespace SpecSalad.features.Roles
 {
     public class SpecifiedRole : ApplicationRole
     {
+        public SpecifiedRole()
+        {
+            TheAnswer = 0;
+        }
+
         int TheAnswer 
         { 
             get

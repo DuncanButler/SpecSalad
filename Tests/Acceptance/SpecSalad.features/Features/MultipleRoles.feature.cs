@@ -68,7 +68,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 11
  testRunner.Given("I am a specified role");
 #line 12
- testRunner.And("There is a secondary role");
+ testRunner.And("there is a secondary role");
 #line 13
  testRunner.When("I attempt to do the return one task");
 #line 14
@@ -87,11 +87,11 @@ this.ScenarioSetup(scenarioInfo);
 #line 17
  testRunner.Given("I am a specified role");
 #line 18
- testRunner.And("There is a secondary role");
+ testRunner.And("there is a secondary role");
 #line 19
  testRunner.When("I attempt to do the return one task");
 #line 20
- testRunner.And("The secondary role attempts to do the subtract one task");
+ testRunner.And("the secondary role attempts to do the subtract one task");
 #line 21
  testRunner.Then("I should see the answer \'0\'");
 #line hidden
@@ -108,12 +108,94 @@ this.ScenarioSetup(scenarioInfo);
 #line 24
  testRunner.Given("I am a specified role");
 #line 25
- testRunner.And("There is a secondary role");
+ testRunner.And("there is a secondary role");
 #line 26
  testRunner.When("I attempt to do the return one task");
 #line 27
- testRunner.And("The secondary role attempts to do the return one task");
+ testRunner.And("the secondary role attempts to do the return one task");
 #line 28
+ testRunner.Then("I should see the answer \'3\'");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Defining two roles, getting an equal answer from the second role")]
+        public virtual void DefiningTwoRolesGettingAnEqualAnswerFromTheSecondRole()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Defining two roles, getting an equal answer from the second role", ((string[])(null)));
+#line 30
+this.ScenarioSetup(scenarioInfo);
+#line 31
+ testRunner.Given("I am a specified role");
+#line 32
+ testRunner.And("there is a secondary role");
+#line 33
+ testRunner.When("I attempt to do the return one task");
+#line 34
+ testRunner.Then("the secondary role should see the answer \'1\'");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Defining two roles, with a question from the secondary role")]
+        public virtual void DefiningTwoRolesWithAQuestionFromTheSecondaryRole()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Defining two roles, with a question from the secondary role", ((string[])(null)));
+#line 36
+this.ScenarioSetup(scenarioInfo);
+#line 37
+ testRunner.Given("I am a specified role");
+#line 38
+ testRunner.And("there is a secondary role");
+#line 39
+ testRunner.When("I attempt to do the return one task");
+#line 40
+ testRunner.Then("the secondary role should see one");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Defining two roles with a question that includes the answer from the secondary ro" +
+            "le")]
+        public virtual void DefiningTwoRolesWithAQuestionThatIncludesTheAnswerFromTheSecondaryRole()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Defining two roles with a question that includes the answer from the secondary ro" +
+                    "le", ((string[])(null)));
+#line 42
+this.ScenarioSetup(scenarioInfo);
+#line 43
+ testRunner.Given("I am a specified role");
+#line 44
+ testRunner.And("there is a secondary role");
+#line 45
+ testRunner.When("I attempt to do the return one task");
+#line 46
+ testRunner.Then("the secondary role should see the answers that includes: 1");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Multiple roles in one scenario")]
+        public virtual void MultipleRolesInOneScenario()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiple roles in one scenario", ((string[])(null)));
+#line 48
+this.ScenarioSetup(scenarioInfo);
+#line 49
+ testRunner.Given("I am a specified role");
+#line 50
+ testRunner.And("there is a secondary role");
+#line 51
+ testRunner.And("there is a auxiliary role");
+#line 52
+ testRunner.When("the auxiliary role attempts to do the return one task");
+#line 53
+ testRunner.And("the secondary role attempts to do the return one task");
+#line 54
  testRunner.Then("I should see the answer \'3\'");
 #line hidden
             testRunner.CollectScenarioErrors();

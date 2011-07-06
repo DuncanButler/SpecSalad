@@ -1,4 +1,5 @@
-﻿using TechTalk.SpecFlow;
+﻿using System;
+using TechTalk.SpecFlow;
 
 namespace SpecSalad
 {
@@ -11,7 +12,10 @@ namespace SpecSalad
 
         public object Retrieve(string key)
         {
-            return ScenarioContext.Current.Get<object>("the_value");
+            if (ScenarioContext.Current.ContainsKey(key) == false)
+                return null;
+
+            return ScenarioContext.Current.Get<object>(key);
         }
     }
 }

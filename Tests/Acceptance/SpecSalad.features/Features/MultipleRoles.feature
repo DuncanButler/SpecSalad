@@ -53,3 +53,12 @@ Scenario: Multiple roles in one scenario
 	And the secondary role attempts to do the return one task
 	Then I should see the answer '3'
 
+Scenario: Defining the role using the secondary role given 
+	Given there is a secondary role
+	When the secondary role attempts to do the return one task
+	Then the secondary role should see the answer '2'
+
+Scenario: Defining the role but calling steps without role
+	Given there is a secondary role
+	When I attempt to do the return one task
+	Then I should see the answer '2'

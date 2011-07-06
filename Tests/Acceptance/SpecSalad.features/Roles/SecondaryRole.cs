@@ -6,6 +6,11 @@ namespace SpecSalad.features.Roles
 {
     public class SecondaryRole : ApplicationRole
     {
+        public SecondaryRole()
+        {
+            this.StoreValue("Total",0);
+        }
+
         public bool Add(int theValue)
         {
             int total = (int) this.Retrieve("Total");

@@ -60,6 +60,22 @@ SpecSalad uses a subset of the Gurkin language to parse the feature text, items 
 		This doesn't carry out any assert, but expects the task to do some custom comparison
 			Then I should compare text
 
+for scenarios with multiple roles an additional syntax for each of the steps that allows the developer to specify the role that 
+is to perform that step is available, these steps are identical to the above with the addition of a role name.
+	
+	<Given | And> there is a <role name>
+
+	<When | And> the <role name> <attempts to | was able to | were able to | did> <task name>[:] [single value][name value pairs [,]]
+
+	<Then | And> the <role name> should <task name> '<expected answer>'
+	 
+	<Than | And> the <role name> should <task name> that includes: <expected content>
+
+	<Than | And> the <role name> should <task name>
+
+If multiple roles are defined in the scenario, and a step without a defined role is called then the first role defined in the scenario
+is used by default.
+
 Task	
 To define a task, the class must inherit from the ApplicationTask base class, this base class provides the following
 additional functionality.

@@ -200,6 +200,40 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             testRunner.CollectScenarioErrors();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Defining the role using the secondary role given")]
+        public virtual void DefiningTheRoleUsingTheSecondaryRoleGiven()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Defining the role using the secondary role given", ((string[])(null)));
+#line 56
+this.ScenarioSetup(scenarioInfo);
+#line 57
+ testRunner.Given("there is a secondary role");
+#line 58
+ testRunner.When("the secondary role attempts to do the return one task");
+#line 59
+ testRunner.Then("the secondary role should see the answer \'2\'");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Defining the role but calling steps without role")]
+        public virtual void DefiningTheRoleButCallingStepsWithoutRole()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Defining the role but calling steps without role", ((string[])(null)));
+#line 61
+this.ScenarioSetup(scenarioInfo);
+#line 62
+ testRunner.Given("there is a secondary role");
+#line 63
+ testRunner.When("I attempt to do the return one task");
+#line 64
+ testRunner.Then("I should see the answer \'2\'");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
     }
 }
 #endregion

@@ -1,0 +1,100 @@
+SpecSalad
+Writing SpecFlow specifications without writing step definitions
+
+A C# dot net 4.0 implementation for Spec Flow of the cucumber add on CukeSalad
+by Antony Marcano and Riverglide.com
+
+SpecSalad allows the developer write SpecFlow specifications without having to write step definitions avoiding the problems
+of large step definition files which are hard to maintain and navigate through, instead the idea of tasks, something that 
+can be done, and roles some who does tasks, splits the implementation into manageable chunks, making them easy to maintain and
+navigate.
+
+Installation
+SpecSalad is available as a Nuget package which installs all the required dependencies (SpecFlow and NUnit) and 
+inserts the assembly reference into the app config file of the test project.
+
+It can be installed manually by compiling the production source, adding a reference to the SpecSalad, SpecFlow, NUnit and 
+adding the following lines to the app config file created by SpecFlow
+
+    <stepAssemblies>
+      <stepAssembly assembly="SpecSalad" />
+    </stepAssemblies>
+
+
+Using SpecSalad
+SpecSalad uses a subset of the Gurkin language to parse the feature text, items in <> are mandatory, items in [] are optional
+
+	Given <I am | you are> a <role name>
+		
+		All SpecSalad scenarios start with a given that defines the role for that scenario for example			
+			Given I am a SpecSalad developer
+			Given you are a SpecSalad developer
+	
+	<And> <I | you> <attempt to | was able to | were able to | did> <task name>[: | ,] [single value][name value 'pairs']
+		
+		This allows for one or more tasks to be called in order to setup the environment for the scenario
+			And I attempt to start the calculator
+			And I attempt to add the number: 1
+			And I attempt to add the number: first number '1'
+			And I attempt to add the numbers: first number '1' second number '2' third number '3'
+		
+	<When | And> <I | you> <attempt to | was able to | were able to | did> <task name>[:] [single value][name value pairs [,]]
+
+		As above this allows for one or more tasks to be called, the syntax is exactly the same as the above And step
+			When I did add numbers together: first number '1' second number '2'
+			And I attempt to subtract the numbers: first number '2' second number '1'
+
+	<Then | And> <I | you> should <task name> '<expected answer>'
+	
+		Asserts that the task name returns the expected answer using the Assert.Equals comparison function
+			Then I should see the result '5'
+
+	<Then | And> <I | you> should <task name> that includes: <expected content>
+	
+		Asserts that the task returns a collection that contains the expected content item using the Assert.Contains
+		comparison function
+			Then I should see on the screen text that includes: Hello World
+
+	<Then | And> <I | you> should <task name>:
+
+		This doesn't carry out any assert, but expects the task to do some custom comparison
+			Then I should compare text
+
+for scenarios with multiple roles an additional syntax for each of the steps that allows the developer to specify the role that 
+is to perform that step is available, these steps are identical to the above with the addition of a role name.
+	
+	<Given | And> there is a <role name>
+
+	<When | And> the <role name> <attempts to | was able to | were able to | did> <task name>[:] [single value][name value pairs [,]]
+
+	<Then | And> the <role name> should <task name> '<expected answer>'
+	 
+	<Than | And> the <role name> should <task name> that includes: <expected content>
+
+	<Than | And> the <role name> should <task name>
+
+If multiple roles are defined in the scenario, and a step without a defined role is called then the first role defined in the scenario
+is used by default.
+
+Task	
+To define a task, the class must inherit from the ApplicationTask base class, this base class provides the following
+additional functionality.
+
+	Perform_Task:
+		This method must be overridden, it is here that the role is called to carry out the specific task
+
+	Role
+		provides access to the current scenario role
+	
+	Details
+		This object contains all the parameters provided in the scenario step, there are two methods for extracting the
+		stored data
+			Value()        - returns the first data items value
+			Value_Of(key)  - returns the value of the given key
+	
+Role
+	To define a role, the class must inherit from ApplicationRole, this base class provides the following additional 
+	functionality.
+
+		StoreValue(key, value) - stores for the duration of the scenario a value with a given key
+		Retrieve(key)          - returns a previously stored value

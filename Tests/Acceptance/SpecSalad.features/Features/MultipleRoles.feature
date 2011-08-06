@@ -62,3 +62,10 @@ Scenario: Defining the role but calling steps without role
 	Given there is a secondary role
 	When I attempt to do the return one task
 	Then I should see the answer '2'
+
+Scenario: Defining the secondary role with an action in the given
+	Given I am a specified role
+	And there is a secondary role
+	And the secondary role attempts to do the return one task
+	When the secondary role attempts to do the return one task
+	Then the secondary role should see the answer '4'

@@ -92,6 +92,7 @@
     <Compile Include="Roles\SpecifiedRole.cs" />
     <Compile Include="Tasks\DoTheReturnOneTask.cs" />
     <Compile Include="Tasks\DoTheReturnTask.cs" />
+    <Compile Include="Tasks\DoTheReturnThreeTask.cs" />
     <Compile Include="Tasks\DoTheSubtractOneTask.cs" />
     <Compile Include="Tasks\RetrieveTheAnswer.cs" />
     <Compile Include="Tasks\SeeOne.cs" />

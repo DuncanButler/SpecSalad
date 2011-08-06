@@ -251,6 +251,27 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Defining the secondary role with an action in the given")]
+        public virtual void DefiningTheSecondaryRoleWithAnActionInTheGiven()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Defining the secondary role with an action in the given", ((string[])(null)));
+#line 66
+this.ScenarioSetup(scenarioInfo);
+#line 67
+ testRunner.Given("I am a specified role");
+#line 68
+ testRunner.And("there is a secondary role");
+#line 69
+ testRunner.And("the secondary role attempts to do the return one task");
+#line 70
+ testRunner.When("the secondary role attempts to do the return one task");
+#line 71
+ testRunner.Then("the secondary role should see the answer \'4\'");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #endregion

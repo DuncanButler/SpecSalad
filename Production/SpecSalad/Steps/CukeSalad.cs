@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Linq;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
@@ -23,6 +24,11 @@ namespace SpecSalad.Steps
 
         Actor GetActor(string name)
         {
+            var key = (from k in ScenarioContext.Current.Keys where k == name select k).FirstOrDefault();
+
+            if(key==null)
+                throw new SpecFlowException(string.Format("Role {0} not defined in scenario context",name));
+
             if (name.Equals("__Primary__"))
                 return ScenarioContext.Current.Get<Actor>(Primary);
 
@@ -70,6 +76,12 @@ namespace SpecSalad.Steps
             Primary = role;
 
             SetActor(role, new Actor(role,TheDirector));
+        }
+
+        [Given(@"the ([a-zA-Z ]+) (?:attempts to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
+        public void GivenTheRolePerformsATask(string role, string task, string details)
+        {
+            GetActor(role).Perform(task, details);    
         }
 
         [When(@"(?:I|you) (?:attempt to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]

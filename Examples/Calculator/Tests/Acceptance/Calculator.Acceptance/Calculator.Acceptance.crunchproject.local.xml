@@ -4,7 +4,11 @@
   <RunPostBuildEvents>false</RunPostBuildEvents>
   <PreviouslyBuiltSuccessfully>true</PreviouslyBuiltSuccessfully>
   <InstrumentAssembly>true</InstrumentAssembly>
-  <BuildOutputPath />
   <DefaultTestTimeout>60000</DefaultTestTimeout>
-  <UseBuildConfiguration />
+  <UseBuildConfiguration></UseBuildConfiguration>
+  <IgnoredTests>
+    <RegexTestSelector>
+      <RegularExpression>.*</RegularExpression>
+    </RegexTestSelector>
+  </IgnoredTests>
 </ProjectConfiguration>

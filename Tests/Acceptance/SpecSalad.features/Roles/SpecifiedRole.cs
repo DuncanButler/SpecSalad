@@ -52,5 +52,10 @@ namespace SpecSalad.features.Roles
         {
             Assert.AreEqual(1,TheAnswer);
         }
+
+        public object GetStoredTaskAnswer()
+        {
+            return  this.Retrieve("FromTask");
+        }
     }
 }

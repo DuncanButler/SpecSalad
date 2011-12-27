@@ -50,9 +50,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TechTalk.SpecFlow, Version=1.7.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+    <Reference Include="TechTalk.SpecFlow, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\SpecFlow.1.7.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+      <HintPath>..\..\..\packages\SpecFlow.1.8.1\lib\net35\TechTalk.SpecFlow.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +76,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RoleStoringFeature.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\TaskStoringFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaskStoringFeature.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\ThenStepSyntaxOptions.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -90,6 +95,7 @@
     <Compile Include="Roles\AuxiliaryRole.cs" />
     <Compile Include="Roles\SecondaryRole.cs" />
     <Compile Include="Roles\SpecifiedRole.cs" />
+    <Compile Include="Tasks\BeAbleToRetrieveTheAnswer.cs" />
     <Compile Include="Tasks\DoTheReturnOneTask.cs" />
     <Compile Include="Tasks\DoTheReturnTask.cs" />
     <Compile Include="Tasks\DoTheReturnThreeTask.cs" />
@@ -99,6 +105,7 @@
     <Compile Include="Tasks\SeeTheAnswer.cs" />
     <Compile Include="Tasks\SeeTheAnswers.cs" />
     <Compile Include="Tasks\Store.cs" />
+    <Compile Include="Tasks\StoreInTheTask.cs" />
     <Compile Include="Tasks\TheReturnOneTask.cs" />
     <Compile Include="Tasks\TheReturnTask.cs" />
   </ItemGroup>
@@ -116,6 +123,10 @@
     <None Include="Features\RoleStoringFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>RoleStoringFeature.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\TaskStoringFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TaskStoringFeature.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\ThenStepSyntaxOptions.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

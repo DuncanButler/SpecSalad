@@ -30,7 +30,7 @@ SpecSalad uses a subset of the Gurkin language to parse the feature text, items 
 			Given I am a SpecSalad developer
 			Given you are a SpecSalad developer
 	
-	<And> <I | you> <attempt to | was able to | were able to | did> <task name>[: | ,] [single value][name value 'pairs']
+	<And> <I | you> <attempt to | was able to | were able to | did> <task name>[:] [single value][name value pairs [,]]
 		
 		This allows for one or more tasks to be called in order to setup the environment for the scenario
 			And I attempt to start the calculator
@@ -69,9 +69,9 @@ is to perform that step is available, these steps are identical to the above wit
 
 	<Then | And> the <role name> should <task name> '<expected answer>'
 	 
-	<Than | And> the <role name> should <task name> that includes: <expected content>
+	<Then | And> the <role name> should <task name> that includes: <expected content>
 
-	<Than | And> the <role name> should <task name>
+	<Then | And> the <role name> should <task name>
 
 If multiple roles are defined in the scenario, and a step without a defined role is called then the first role defined in the scenario
 is used by default.

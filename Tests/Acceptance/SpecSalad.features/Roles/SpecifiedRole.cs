@@ -57,5 +57,10 @@ namespace SpecSalad.features.Roles
         {
             return  this.Retrieve("FromTask");
         }
+
+		public void CheckTheAnswerIs(string answer)
+		{
+			Assert.That(answer, Is.EqualTo("1"));
+		}
     }
 }

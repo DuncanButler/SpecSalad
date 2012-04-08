@@ -94,7 +94,19 @@ namespace SpecSalad.Steps
         public void WhenTaskSpecificationWithSecondaryRole(string role, string task,string details)
         {
             GetActor(role).Perform(task,details);
-        }
+		}
+
+		[Then(@"(?:I|you) (?:can|am able to|are able to)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
+		public void ThenTaskSpecification(string task, string details)
+		{
+			GetActor("__Primary__").Perform(task, details);
+		}
+
+		[Then(@"the ([a-zA-Z ]+) (?:can|is able to)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
+		public void ThenTaskSpecificationWithSecondaryRole(string role, string task, string details)
+		{
+			GetActor(role).Perform(task, details);
+		}
 
         [Then(@"(?:I|you) should ([^':]*) '([^']*)'")]
         public void ThenAreEqualSpecification(string theQuestion, string expectedAnswer)

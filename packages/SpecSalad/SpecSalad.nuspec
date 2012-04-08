@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>SpecSalad</id>
-    <version>1.6.0</version>
+    <version>1.6.1</version>
     <authors>Duncan Butler</authors>
     <owners>Duncan Butler</owners>    
     <projectUrl>https://github.com/DuncanButler/SpecSalad</projectUrl>
@@ -11,7 +11,7 @@
     <tags>SpecSalad SpecFlow .net40</tags>
     <dependencies>
       <dependency id="SpecFlow" version="1.8.1" />
-	  <dependency id="NUnit" version="2.5.10.11092" />
+	  <dependency id="NUnit" version="2.6.0.12054" />
     </dependencies>
   </metadata>
 </package>

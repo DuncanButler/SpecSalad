@@ -33,4 +33,24 @@ Scenario: calling then with the syntax I should <question> that includes <expect
 	When I attempt to do the return one task
 	Then I should see the answers that includes: 1
 
+Scenario: calling then with syntax I can <task>
+	Given I am a specified role
+	When I attempt to do the return one task
+	Then I can get the answer: 1
+
+Scenario: calling then with syntax I am able to <task>
+	Given I am a specified role
+	When I attempt to do the return one task
+	Then I am able to get the answer: 1
+
+Scenario: calling then with syntax you can <task>
+	Given I am a specified role
+	When I attempt to do the return one task
+	Then I can get the answer: 1
+
+Scenario: calling then with syntax you are able to <task>
+	Given I am a specified role
+	When I attempt to do the return one task
+	Then I am able to get the answer: 1
+
 

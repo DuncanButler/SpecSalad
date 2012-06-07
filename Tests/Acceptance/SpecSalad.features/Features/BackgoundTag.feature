@@ -6,6 +6,7 @@
 Background: 
 	Given I am a specified role
 	And I attempt to do the return one task
+
 Scenario: Add one to the number	
 	When I attempt to do the return one task
 	Then I should see the answer '2'

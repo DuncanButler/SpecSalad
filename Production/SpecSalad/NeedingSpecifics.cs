@@ -6,8 +6,10 @@ namespace SpecSalad
 {
     public interface Details
     {
+        string Key(int index);
         string Value_Of(string specific);
-        string Value();        
+        string Value();
+        int Count();
     }
 
     public class NeedingSpecifics : Details
@@ -53,6 +55,18 @@ namespace SpecSalad
             name = name.Replace(' ', '_');
 
             return name;
+        }
+
+        public string Key(int index)
+        {
+            IList<string> temp = info.Keys.ToList();
+
+            return temp[index];
+        }
+
+        public int Count()
+        {
+            return info.Count;
         }
     }
 }

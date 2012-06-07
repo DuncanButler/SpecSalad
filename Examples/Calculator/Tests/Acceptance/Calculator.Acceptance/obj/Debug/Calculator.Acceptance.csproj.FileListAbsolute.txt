@@ -73,3 +73,5 @@ C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calcul
 C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\obj\Debug\Calculator.Acceptance.dll
 C:\Users\Duncan\Documents\My Dropbox\Dropbox\SpecSalad\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\obj\Debug\Calculator.Acceptance.pdb
+C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\obj\Debug\Calculator.Acceptance.dll
+C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\obj\Debug\Calculator.Acceptance.pdb

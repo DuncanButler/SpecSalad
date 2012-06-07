@@ -118,6 +118,25 @@ namespace SpecSalad.Specifications
         static string _result;
     }
 
+    [Subject("Needing Specifics")]
+    public class can_get_key_names_by_index_and_a_count_items : NeedingSpecificsContext
+    {
+        Establish context =
+            () =>
+                {
+                    _specifics.Understand_The("first 'value 1' second 'value 2'");
+                };
+
+        It returns_the_first_key =
+            () => _specifics.Key(0).ShouldEqual("first");
+
+        It returns_the_second_key =
+            () => _specifics.Key(1).ShouldEqual("second");
+
+        It returns_the_count_two =
+            () => _specifics.Count();
+    }
+
     public class NeedingSpecificsContext
     {
         Establish context =

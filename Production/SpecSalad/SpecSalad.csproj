@@ -57,6 +57,7 @@
     <Compile Include="SaladException.cs" />
     <Compile Include="Steps\CukeSalad.cs" />
     <Compile Include="ApplicationTask.cs" />
+    <Compile Include="TaskBase.cs" />
     <Compile Include="TaskRole.cs" />
   </ItemGroup>
   <ItemGroup>

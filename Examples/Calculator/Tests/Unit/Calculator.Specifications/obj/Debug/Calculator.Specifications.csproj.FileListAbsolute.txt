@@ -47,7 +47,12 @@ C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calcul
 C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.Specifications.pdb
 C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.dll
 C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Calculator.pdb
-C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.pdb
 C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.csprojResolveAssemblyReference.cache
 C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.dll
 C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\obj\Debug\Calculator.Specifications.pdb
+C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Castle.Core.dll
+C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\FakeItEasy.dll
+C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.Clr4.dll
+C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Machine.Specifications.dll
+C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\Castle.Core.xml
+C:\Users\Duncan\Documents\GitHub\SpecSalad\Examples\Calculator\Tests\Unit\Calculator.Specifications\bin\Debug\FakeItEasy.xml

@@ -45,15 +45,18 @@
         {
             var the_thing = _directed_by.How_Do_I_Perform(something);
 
+            if (the_thing == null)
+                return;
+
             see_how_i_do(the_thing);
         }
 
         void see_how_i_do(TaskRole something)
         {
-            if (typeof(ApplicationTask).IsAssignableFrom(something.GetType()))
+            if (something is ApplicationTask)
                 _current_task = (ApplicationTask)something;
 
-            if (typeof(ApplicationRole).IsAssignableFrom(something.GetType()))
+            if (something is ApplicationRole)
                 _currentApplicationRole = (ApplicationRole) something;
         }
     }

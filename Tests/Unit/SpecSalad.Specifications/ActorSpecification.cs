@@ -17,7 +17,7 @@ namespace SpecSalad.Specifications
         Because of =
             () =>
                 {
-                    _actor = new Actor(_role_description, _director);
+                    _actor = new Actor(_role_description, _director);  
                 };
 
         It get_into_the_character =

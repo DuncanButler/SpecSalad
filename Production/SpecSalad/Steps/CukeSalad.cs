@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
@@ -84,6 +86,12 @@ namespace SpecSalad.Steps
             GetActor(role).Perform(task, details);    
         }
 
+        [Given(@"(?:I|you) see a list ([A-Z a-z_-]*)?")]
+        public void GivenThereIsAList(string name, Table theList)
+        {            
+            ScenarioContext.Current.Add(name, theList);
+        }
+
         [When(@"(?:I|you) (?:attempt to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
         public void WhenTaskSpecification(string task, string details)
         {
@@ -114,6 +122,44 @@ namespace SpecSalad.Steps
             string actualAnswer = Convert.ToString(GetActor("__Primary__").Answer(theQuestion));
 
             Assert.AreEqual(expectedAnswer, actualAnswer);
+        }
+
+        [Then(@"(?:I|you) should see ([^':]+) in the list?")]
+        public void ThenAreInList(string theQuestion, Table expectedAnswers)
+        {
+            var actualAnswers = (Table) GetActor("__Primary__").Answer(theQuestion);
+
+            Assert.That(actualAnswers.RowCount,Is.EqualTo(expectedAnswers.RowCount), "row counts do not match");
+
+            bool equal = actualAnswers.Equals(expectedAnswers);
+
+            var expectedValues = new List<string>();
+
+            foreach (TableRow row in expectedAnswers.Rows)
+            {
+                var builder = new StringBuilder();
+                foreach (var key in row.Keys)
+                {
+                    builder.Append(row[key]);
+                    builder.Append(",");
+                }
+
+                expectedValues.Add(builder.ToString());
+            }
+
+            foreach (TableRow row in actualAnswers.Rows)
+            {
+                var builder = new StringBuilder();
+                foreach (var key in row.Keys)
+                {
+                    builder.Append(row[key]);
+                    builder.Append(",");
+                }
+
+                string found = (from v in expectedValues where v == builder.ToString() select v).FirstOrDefault();
+
+                Assert.That(found,Is.Not.Null,"values not found in expected table");
+            }                  
         }
 
         [Then(@"(?:I|you) should ([^':]+)")]

@@ -68,6 +68,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RoleStoringFeature.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\SpecificationsWithTables.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpecificationsWithTables.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\TaskStoringFeature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -87,6 +92,7 @@
     <Compile Include="Roles\AuxiliaryRole.cs" />
     <Compile Include="Roles\SecondaryRole.cs" />
     <Compile Include="Roles\SpecifiedRole.cs" />
+    <Compile Include="Roles\TableSpecification.cs" />
     <Compile Include="Tasks\BeAbleToRetrieveTheAnswer.cs" />
     <Compile Include="Tasks\DoTheReturnOneTask.cs" />
     <Compile Include="Tasks\DoTheReturnTask.cs" />
@@ -97,10 +103,13 @@
     <Compile Include="Tasks\SeeOne.cs" />
     <Compile Include="Tasks\SeeTheAnswer.cs" />
     <Compile Include="Tasks\SeeTheAnswers.cs" />
+    <Compile Include="Tasks\SeeTheFavoriteColourIsTheAnswer.cs" />
     <Compile Include="Tasks\Store.cs" />
     <Compile Include="Tasks\StoreInTheTask.cs" />
+    <Compile Include="Tasks\TheFavoriteColours.cs" />
     <Compile Include="Tasks\TheReturnOneTask.cs" />
     <Compile Include="Tasks\TheReturnTask.cs" />
+    <Compile Include="Tasks\UpvoteTheAnswer.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -116,6 +125,10 @@
     <None Include="Features\RoleStoringFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>RoleStoringFeature.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\SpecificationsWithTables.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SpecificationsWithTables.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\TaskStoringFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

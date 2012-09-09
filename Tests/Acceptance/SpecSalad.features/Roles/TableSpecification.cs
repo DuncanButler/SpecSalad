@@ -8,7 +8,7 @@ namespace SpecSalad.features.Roles
     {
          public void UpVoteAnswer(string answer)
          {
-             var currentVoting = (Table) Retrieve("of answers to the question Whats your favorite colour");
+             var currentVoting = (Table)Retrieve("whats your favourite colour");
 
              foreach (TableRow row in currentVoting.Rows)
              {
@@ -21,7 +21,7 @@ namespace SpecSalad.features.Roles
                  }
              }
 
-             StoreValue("of answers to the question Whats your favorite colour", currentVoting);
+             StoreValue("whats your favourite colour", currentVoting);
          }
     }
 }

@@ -5,11 +5,11 @@ using TechTalk.SpecFlow;
 
 namespace SpecSalad.features.Tasks
 {
-    public class SeeTheFavoriteColourIsTheAnswer : ApplicationTask
+    public class SeeTheFavouriteColourIs : ApplicationTask
     {
         public override object Perform_Task()
         {
-            var votes = (Table) Retrieve("of answers to the question Whats your favorite colour");
+            var votes = (Table)Retrieve("whats your favourite colour");
 
             string winningColour = "";
             int[] winningVoteCount = {0};

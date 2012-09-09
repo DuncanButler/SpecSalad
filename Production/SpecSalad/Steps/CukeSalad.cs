@@ -86,16 +86,16 @@ namespace SpecSalad.Steps
             GetActor(role).Perform(task, details);    
         }
 
-        [Given(@"(?:I|you) can see a list ([A-Z a-z_-]*)?")]
-        public void GivenThereIsAList(string name, Table theList)
+        [Given(@"(?:I|you) can see the table ([A-Z a-z_-]*)?")]
+        public void GivenThereIsAList(string name, Table theTable)
         {            
-            ScenarioContext.Current.Add(name, theList);
+            ScenarioContext.Current.Add(name, theTable);
         }
 
-        [Given(@"the ([a-zA-Z ]+) can see a list ([A-Z a-z_-]*)?")]
-        public void GivenRoleCanSeeList(string role, string name, Table theList)
+        [Given(@"the ([a-zA-Z ]+) can see the table ([A-Z a-z_-]*)?")]
+        public void GivenRoleCanSeeList(string role, string name, Table theTable)
         {
-            ScenarioContext.Current.Add(name, theList);
+            ScenarioContext.Current.Add(name, theTable);
         }
 
         [When(@"(?:I|you) (?:attempt to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
@@ -130,16 +130,16 @@ namespace SpecSalad.Steps
             Assert.AreEqual(expectedAnswer, actualAnswer);
         }
 
-        [Then("@the ([a-zA-Z ]+) should see ([^':]+) in the list?")]
-        public void ThenRoleAreInList(string role, string theQuestion, Table expectedAnswers)
+        [Then("@the ([a-zA-Z ]+) should see ([^':]+) table?")]
+        public void ThenRoleAreInTable(string role, string theQuestion, Table expectedAnswers)
         {
             var actualAnswers = (Table) GetActor(role).Answer(theQuestion);
 
             ValidateTableAnswers(actualAnswers, expectedAnswers);
         }
 
-        [Then(@"(?:I|you) should see ([^':]+) in the list?")]
-        public void ThenAreInList(string theQuestion, Table expectedAnswers)
+        [Then(@"(?:I|you) should see ([^':]+) table?")]
+        public void ThenAreInTable(string theQuestion, Table expectedAnswers)
         {
             var actualAnswers = (Table) GetActor("__Primary__").Answer(theQuestion);
 
@@ -149,8 +149,6 @@ namespace SpecSalad.Steps
         private void ValidateTableAnswers(Table actualAnswers, Table expectedAnswers)
         {
             Assert.That(actualAnswers.RowCount, Is.EqualTo(expectedAnswers.RowCount), "row counts do not match");
-
-            bool equal = actualAnswers.Equals(expectedAnswers);
 
             var expectedValues = new List<string>();
 

@@ -88,11 +88,11 @@ this.ScenarioSetup(scenarioInfo);
                         "blue",
                         "1"});
 #line 8
- testRunner.And("I can see a list of answers to the question Whats your favorite colour", ((string)(null)), table1, "And ");
+ testRunner.And("I can see the table whats your favourite colour", ((string)(null)), table1, "And ");
 #line 13
- testRunner.When("I attempt to upvote the answer, Cucumber green", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I attempt to up vote the answer, Cucumber green", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
- testRunner.Then("I should see the favorite colour is the answer \'Cucumber green\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should see the favourite colour is \'Cucumber green\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -120,11 +120,11 @@ this.ScenarioSetup(scenarioInfo);
                         "blue",
                         "1"});
 #line 18
- testRunner.And("I can see a list of answers to the question Whats your favorite colour", ((string)(null)), table2, "And ");
+ testRunner.And("I can see the table whats your favourite colour", ((string)(null)), table2, "And ");
 #line 23
- testRunner.When("I attempt to upvote the answer, Cucumber green", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I attempt to up vote the answer, Cucumber green", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 24
- testRunner.And("I attempt to upvote the answer, blue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I attempt to up vote the answer, blue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                         "answer",
@@ -136,7 +136,7 @@ this.ScenarioSetup(scenarioInfo);
                         "blue",
                         "2"});
 #line 25
- testRunner.Then("I should see the favorite colours in the list", ((string)(null)), table3, "Then ");
+ testRunner.Then("I should see the favourite colours table", ((string)(null)), table3, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

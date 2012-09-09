@@ -103,10 +103,10 @@
     <Compile Include="Tasks\SeeOne.cs" />
     <Compile Include="Tasks\SeeTheAnswer.cs" />
     <Compile Include="Tasks\SeeTheAnswers.cs" />
-    <Compile Include="Tasks\SeeTheFavoriteColourIsTheAnswer.cs" />
+    <Compile Include="Tasks\SeeTheFavouriteColourIs.cs" />
     <Compile Include="Tasks\Store.cs" />
     <Compile Include="Tasks\StoreInTheTask.cs" />
-    <Compile Include="Tasks\TheFavoriteColours.cs" />
+    <Compile Include="Tasks\TheFavouriteColours.cs" />
     <Compile Include="Tasks\TheReturnOneTask.cs" />
     <Compile Include="Tasks\TheReturnTask.cs" />
     <Compile Include="Tasks\UpvoteTheAnswer.cs" />

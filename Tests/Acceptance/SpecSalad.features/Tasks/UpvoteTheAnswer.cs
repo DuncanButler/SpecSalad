@@ -1,6 +1,6 @@
 ﻿namespace SpecSalad.features.Tasks
 {
-    public class UpvoteTheAnswer : ApplicationTask
+    public class UpVoteTheAnswer : ApplicationTask
     {
         public override object Perform_Task()
         {

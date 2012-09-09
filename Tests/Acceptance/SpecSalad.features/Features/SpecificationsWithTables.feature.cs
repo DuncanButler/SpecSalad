@@ -88,7 +88,7 @@ this.ScenarioSetup(scenarioInfo);
                         "blue",
                         "1"});
 #line 8
- testRunner.And("I see a list of answers to the question Whats your favorite colour", ((string)(null)), table1, "And ");
+ testRunner.And("I can see a list of answers to the question Whats your favorite colour", ((string)(null)), table1, "And ");
 #line 13
  testRunner.When("I attempt to upvote the answer, Cucumber green", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
@@ -120,7 +120,7 @@ this.ScenarioSetup(scenarioInfo);
                         "blue",
                         "1"});
 #line 18
- testRunner.And("I see a list of answers to the question Whats your favorite colour", ((string)(null)), table2, "And ");
+ testRunner.And("I can see a list of answers to the question Whats your favorite colour", ((string)(null)), table2, "And ");
 #line 23
  testRunner.When("I attempt to upvote the answer, Cucumber green", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 24

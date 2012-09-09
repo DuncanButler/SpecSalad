@@ -86,9 +86,15 @@ namespace SpecSalad.Steps
             GetActor(role).Perform(task, details);    
         }
 
-        [Given(@"(?:I|you) see a list ([A-Z a-z_-]*)?")]
+        [Given(@"(?:I|you) can see a list ([A-Z a-z_-]*)?")]
         public void GivenThereIsAList(string name, Table theList)
         {            
+            ScenarioContext.Current.Add(name, theList);
+        }
+
+        [Given(@"the ([a-zA-Z ]+) can see a list ([A-Z a-z_-]*)?")]
+        public void GivenRoleCanSeeList(string role, string name, Table theList)
+        {
             ScenarioContext.Current.Add(name, theList);
         }
 
@@ -124,12 +130,25 @@ namespace SpecSalad.Steps
             Assert.AreEqual(expectedAnswer, actualAnswer);
         }
 
+        [Then("@the ([a-zA-Z ]+) should see ([^':]+) in the list?")]
+        public void ThenRoleAreInList(string role, string theQuestion, Table expectedAnswers)
+        {
+            var actualAnswers = (Table) GetActor(role).Answer(theQuestion);
+
+            ValidateTableAnswers(actualAnswers, expectedAnswers);
+        }
+
         [Then(@"(?:I|you) should see ([^':]+) in the list?")]
         public void ThenAreInList(string theQuestion, Table expectedAnswers)
         {
             var actualAnswers = (Table) GetActor("__Primary__").Answer(theQuestion);
 
-            Assert.That(actualAnswers.RowCount,Is.EqualTo(expectedAnswers.RowCount), "row counts do not match");
+            ValidateTableAnswers(actualAnswers, expectedAnswers);
+        }
+
+        private void ValidateTableAnswers(Table actualAnswers, Table expectedAnswers)
+        {
+            Assert.That(actualAnswers.RowCount, Is.EqualTo(expectedAnswers.RowCount), "row counts do not match");
 
             bool equal = actualAnswers.Equals(expectedAnswers);
 
@@ -158,8 +177,8 @@ namespace SpecSalad.Steps
 
                 string found = (from v in expectedValues where v == builder.ToString() select v).FirstOrDefault();
 
-                Assert.That(found,Is.Not.Null,"values not found in expected table");
-            }                  
+                Assert.That(found, Is.Not.Null, "values not found in expected table");
+            } 
         }
 
         [Then(@"(?:I|you) should ([^':]+)")]

@@ -130,18 +130,18 @@ namespace SpecSalad.Steps
             Assert.AreEqual(expectedAnswer, actualAnswer);
         }
 
-        [Then("@the ([a-zA-Z ]+) should see ([^':]+) table?")]
-        public void ThenRoleAreInTable(string role, string theQuestion, Table expectedAnswers)
-        {
-            var actualAnswers = (Table) GetActor(role).Answer(theQuestion);
-
-            ValidateTableAnswers(actualAnswers, expectedAnswers);
-        }
-
         [Then(@"(?:I|you) should see ([^':]+) table?")]
         public void ThenAreInTable(string theQuestion, Table expectedAnswers)
         {
             var actualAnswers = (Table) GetActor("__Primary__").Answer(theQuestion);
+
+            ValidateTableAnswers(actualAnswers, expectedAnswers);
+        }
+
+        [Then("@the ([a-zA-Z ]+) should see ([^':]+) table?")]
+        public void ThenRoleAreInTable(string role, string theQuestion, Table expectedAnswers)
+        {
+            var actualAnswers = (Table) GetActor(role).Answer(theQuestion);
 
             ValidateTableAnswers(actualAnswers, expectedAnswers);
         }

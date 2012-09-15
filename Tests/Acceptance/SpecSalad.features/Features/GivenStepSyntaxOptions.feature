@@ -47,3 +47,10 @@ Scenario: calling given and with the syntax including a comma instead of the col
 	And I did the return task, with a single parameter '2'
 	When I attempt to do the return task: with a single parameter '1'
 	Then I should see the answer '3'
+
+Scenario: using the given does syntax with multiple roles
+	Given I am a specified role
+	And there is a secondary role
+	And the secondary role does the return one task
+	When the secondary role does the return one task
+	Then the secondary role should see the answer '4'

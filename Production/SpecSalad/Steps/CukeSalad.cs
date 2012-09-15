@@ -80,7 +80,7 @@ namespace SpecSalad.Steps
             SetActor(role, new Actor(role,TheDirector));
         }
 
-        [Given(@"the ([a-zA-Z ]+) (?:attempts to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
+        [Given(@"the ([a-zA-Z ]+) (?:attempts to|was able to|were able to|did|does)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
         public void GivenTheRolePerformsATask(string role, string task, string details)
         {
             GetActor(role).Perform(task, details);    
@@ -98,13 +98,13 @@ namespace SpecSalad.Steps
             ScenarioContext.Current.Add(name, theTable);
         }
 
-        [When(@"(?:I|you) (?:attempt to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
+        [When(@"(?:I|you) (?:attempt to|was able to|were able to|did|do)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
         public void WhenTaskSpecification(string task, string details)
         {
             GetActor("__Primary__").Perform(task, details);
         }
 
-        [When(@"the ([a-zA-Z ]+) (?:attempts to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
+        [When(@"the ([a-zA-Z ]+) (?:attempts to|was able to|were able to|did|does)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
         public void WhenTaskSpecificationWithSecondaryRole(string role, string task,string details)
         {
             GetActor(role).Perform(task,details);

@@ -57,3 +57,15 @@ Scenario: calling when with the syntax containing a comma instead of a colon
 	Given I am a specified role
 	When I attempt to do the return task, with parameter '2' and parameter '1'
 	Then I should see the answer '3'
+
+Scenario: using when with a do syntax
+	Given I am a specified role
+	When I do the return task, with parameter '2' and parameter '1'
+	Then I should see the answer '3'
+
+Scenario: using when does syntax when there are multiple rows
+	Given I am a specified role
+	And there is a secondary role
+	And the secondary role attempts to do the return one task
+	When the secondary role does the return one task
+	Then the secondary role should see the answer '4'

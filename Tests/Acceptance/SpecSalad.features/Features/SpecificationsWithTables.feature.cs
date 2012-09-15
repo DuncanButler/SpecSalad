@@ -70,9 +70,9 @@ namespace SpecSalad.features.Features
         public virtual void ASimpleTableInTheGivenStatement()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("a simple table in the given statement", ((string[])(null)));
-#line 6
+#line 5
 this.ScenarioSetup(scenarioInfo);
-#line 7
+#line 6
  testRunner.Given("I am a table specification", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -87,11 +87,11 @@ this.ScenarioSetup(scenarioInfo);
             table1.AddRow(new string[] {
                         "blue",
                         "1"});
-#line 8
+#line 7
  testRunner.And("I can see the table whats your favourite colour", ((string)(null)), table1, "And ");
-#line 13
+#line 12
  testRunner.When("I attempt to up vote the answer, Cucumber green", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 14
+#line 13
  testRunner.Then("I should see the favourite colour is \'Cucumber green\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -102,9 +102,9 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void ASimpleTableInTheThenStatement()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("a simple table in the then statement", ((string[])(null)));
-#line 16
+#line 15
 this.ScenarioSetup(scenarioInfo);
-#line 17
+#line 16
  testRunner.Given("I am a table specification", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -119,11 +119,11 @@ this.ScenarioSetup(scenarioInfo);
             table2.AddRow(new string[] {
                         "blue",
                         "1"});
-#line 18
+#line 17
  testRunner.And("I can see the table whats your favourite colour", ((string)(null)), table2, "And ");
-#line 23
+#line 22
  testRunner.When("I attempt to up vote the answer, Cucumber green", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 24
+#line 23
  testRunner.And("I attempt to up vote the answer, blue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -135,8 +135,52 @@ this.ScenarioSetup(scenarioInfo);
             table3.AddRow(new string[] {
                         "blue",
                         "2"});
-#line 25
+#line 24
  testRunner.Then("I should see the favourite colours table", ((string)(null)), table3, "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("alternate syntax for the table statement")]
+        public virtual void AlternateSyntaxForTheTableStatement()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("alternate syntax for the table statement", ((string[])(null)));
+#line 29
+this.ScenarioSetup(scenarioInfo);
+#line 30
+ testRunner.Given("I am a table specification", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                        "answer",
+                        "vote"});
+            table4.AddRow(new string[] {
+                        "Red",
+                        "1"});
+            table4.AddRow(new string[] {
+                        "Cucumber green",
+                        "1"});
+            table4.AddRow(new string[] {
+                        "blue",
+                        "1"});
+#line 31
+ testRunner.And("I can see the details whats your favourite colour", ((string)(null)), table4, "And ");
+#line 36
+ testRunner.When("I attempt to up vote the answer, blue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 37
+ testRunner.And("I attempt to up vote the answer, Cucumber green", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                        "answer",
+                        "vote"});
+            table5.AddRow(new string[] {
+                        "Cucumber green",
+                        "2"});
+            table5.AddRow(new string[] {
+                        "blue",
+                        "2"});
+#line 38
+ testRunner.Then("I should see the favourite colours with details", ((string)(null)), table5, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

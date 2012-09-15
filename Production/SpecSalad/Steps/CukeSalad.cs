@@ -86,13 +86,13 @@ namespace SpecSalad.Steps
             GetActor(role).Perform(task, details);    
         }
 
-        [Given(@"(?:I|you) can see the table ([A-Z a-z_-]*)?")]
+        [Given(@"(?:I|you) can see the (?:table|details) ([A-Z a-z_-]*)?")]
         public void GivenThereIsAList(string name, Table theTable)
         {            
             ScenarioContext.Current.Add(name, theTable);
         }
 
-        [Given(@"the ([a-zA-Z ]+) can see the table ([A-Z a-z_-]*)?")]
+        [Given(@"the ([a-zA-Z ]+) can see the (?:table|details) ([A-Z a-z_-]*)?")]
         public void GivenRoleCanSeeList(string role, string name, Table theTable)
         {
             ScenarioContext.Current.Add(name, theTable);
@@ -130,7 +130,7 @@ namespace SpecSalad.Steps
             Assert.AreEqual(expectedAnswer, actualAnswer);
         }
 
-        [Then(@"(?:I|you) should see ([^':]+) table?")]
+        [Then(@"(?:I|you) should see ([^':]+) (?:table|with details)")]
         public void ThenAreInTable(string theQuestion, Table expectedAnswers)
         {
             var actualAnswers = (Table) GetActor("__Primary__").Answer(theQuestion);
@@ -138,7 +138,7 @@ namespace SpecSalad.Steps
             ValidateTableAnswers(actualAnswers, expectedAnswers);
         }
 
-        [Then("@the ([a-zA-Z ]+) should see ([^':]+) table?")]
+        [Then("@the ([a-zA-Z ]+) should see ([^':]+) (?:table|with details)")]
         public void ThenRoleAreInTable(string role, string theQuestion, Table expectedAnswers)
         {
             var actualAnswers = (Table) GetActor(role).Answer(theQuestion);

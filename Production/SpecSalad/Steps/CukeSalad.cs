@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NUnit.Framework;
 using TechTalk.SpecFlow;
+using PowerAssert;
 
 namespace SpecSalad.Steps
 {
@@ -127,7 +127,7 @@ namespace SpecSalad.Steps
         {
             string actualAnswer = Convert.ToString(GetActor("__Primary__").Answer(theQuestion));
 
-            Assert.AreEqual(expectedAnswer, actualAnswer);
+            PAssert.IsTrue(() => actualAnswer == expectedAnswer);
         }
 
         [Then(@"(?:I|you) should see ([^':]+) (?:table|with details)")]
@@ -148,7 +148,7 @@ namespace SpecSalad.Steps
 
         private void ValidateTableAnswers(Table actualAnswers, Table expectedAnswers)
         {
-            Assert.That(actualAnswers.RowCount, Is.EqualTo(expectedAnswers.RowCount), "row counts do not match");
+            PAssert.IsTrue(() => actualAnswers.RowCount == expectedAnswers.RowCount);
 
             var expectedValues = new List<string>();
 
@@ -173,9 +173,9 @@ namespace SpecSalad.Steps
                     builder.Append(",");
                 }
 
-                string found = (from v in expectedValues where v == builder.ToString() select v).FirstOrDefault();
+                string values_found_in_table = (from v in expectedValues where v == builder.ToString() select v).FirstOrDefault();
 
-                Assert.That(found, Is.Not.Null, "values not found in expected table");
+                PAssert.IsTrue(() => values_found_in_table != null);
             } 
         }
 
@@ -188,7 +188,8 @@ namespace SpecSalad.Steps
         [Then(@"(?:I|you) should ([^']*) that includes: (.*)")]
         public void ThenQuestionIncludes(string theQuestion, string expectedContent)
         {
-            Assert.Contains(expectedContent, (ICollection)GetActor("__Primary__").Answer(theQuestion));
+            var theAnswer = (ICollection<string>) GetActor("__Primary__").Answer(theQuestion);
+            PAssert.IsTrue(() => theAnswer.Contains(expectedContent));
         }
 
         [Then(@"the ([a-zA-Z ]+) should ([^':]*) '([^']*)'")]
@@ -196,7 +197,7 @@ namespace SpecSalad.Steps
         {
             string actualAnswer = Convert.ToString(GetActor(role).Answer(theQuestion));
 
-            Assert.AreEqual(expectedAnswer, actualAnswer);
+            PAssert.IsTrue(() => expectedAnswer == actualAnswer);
         }
 
         [Then(@"the ([a-zA-Z ]+) should ([^':]+)")]
@@ -208,7 +209,8 @@ namespace SpecSalad.Steps
         [Then(@"the ([a-zA-Z ]+) should ([^']*) that includes: (.*)")]
         public void TheAnswerIncludesWithSecondaryRole(string role, string theQuestion, string expectedContent)
         {
-            Assert.Contains(expectedContent, (ICollection)GetActor(role).Answer(theQuestion));
+            var theAnswers = (ICollection<string>) GetActor(role).Answer(theQuestion);
+            PAssert.IsTrue(() => theAnswers.Contains(expectedContent));
         }
     }
 }

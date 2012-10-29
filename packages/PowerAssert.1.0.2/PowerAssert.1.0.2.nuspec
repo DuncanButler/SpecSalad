@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>PowerAssert</id>
+    <version>1.0.2</version>
+    <title>PowerAssert</title>
+    <authors>Robert Fonseca-Ensor</authors>
+    <owners>Robert Fonseca-Ensor</owners>
+    <licenseUrl>http://powerassert.codeplex.com/license</licenseUrl>
+    <projectUrl>http://powerassert.codeplex.com/</projectUrl>
+    <iconUrl>https://nugetgallery.blob.core.windows.net/icons/PowerAssert.1.0.2.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>When you make a unit test assertion with PowerAssert, your assertion messages become much more useful because PowerAssert shows you the values of each element in your assertion expression. See http://powerassert.codeplex.com/ for examples</description>
+    <summary>Unit test assertion framework</summary>
+  </metadata>
+</package>

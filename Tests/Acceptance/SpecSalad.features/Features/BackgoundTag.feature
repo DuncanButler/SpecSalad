@@ -1,5 +1,5 @@
 ﻿Feature: Background step defination usage
-	In to make my features easier to read
+	In order to make my features easier to read
 	As a developer
 	I want to be able to use the background tag
 

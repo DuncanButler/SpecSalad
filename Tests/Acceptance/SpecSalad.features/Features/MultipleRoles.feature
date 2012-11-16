@@ -69,3 +69,10 @@ Scenario: Defining the secondary role with an action in the given
 	And the secondary role attempts to do the return one task
 	When the secondary role attempts to do the return one task
 	Then the secondary role should see the answer '4'
+
+Scenario: Defining two roles with the first person used second the first person is primary and used as defaut
+	Given there is a secondary role
+	And I am a specified role
+	When I attempt to do the return one task
+	Then I should see the answer '1'
+

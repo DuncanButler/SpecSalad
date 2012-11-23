@@ -11,17 +11,20 @@ namespace SpecSalad.Steps
     [Binding]
     public class CukeSalad
     {
-        string Primary 
-        { 
-            get { return ScenarioContext.Current.Get<string>("__Primary__"); } 
-            set
-            {
-                string toSet;
-                ScenarioContext.Current.TryGetValue("__Primary__", out toSet);
+        private const string __PRIMARY__ = "__Primary__";
 
-                if(string.IsNullOrWhiteSpace(toSet))
-                    ScenarioContext.Current.Set(value,"__Primary__");
+        string Primary 
+        {
+            get
+            {
+                if (ScenarioContext.Current.ContainsKey(__PRIMARY__))
+                {
+                    return ScenarioContext.Current.Get<string>(__PRIMARY__);
+                }
+
+                return string.Empty;
             }
+            set { ScenarioContext.Current.Set(value,__PRIMARY__); }
         }
 
         Actor GetActor(string name)
@@ -31,7 +34,7 @@ namespace SpecSalad.Steps
             if(key==null)
                 throw new SpecFlowException(string.Format("Role {0} not defined in scenario context",name));
 
-            if (name.Equals("__Primary__"))
+            if (name.Equals(__PRIMARY__))
                 return ScenarioContext.Current.Get<Actor>(Primary);
 
             return ScenarioContext.Current.Get<Actor>(name);
@@ -58,15 +61,18 @@ namespace SpecSalad.Steps
         [Given(@"(?:I am|you are) a ([a-zA-Z ]+)")]
         public void GivenRoleSpecification(string role)
         {
-            TheDirector = new SaladDirector();
+            if(TheDirector == null)
+                TheDirector = new SaladDirector();
+
             Primary = role;
+
             SetActor(role,new Actor(role, TheDirector));            
         }
 
         [Given(@"(?:I|you) (?:attempt to|was able to|were able to|did)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
         public void GivenTaskSpecification(string task, string details)
         {
-            GetActor("__Primary__").Perform(task, details);
+            GetActor(__PRIMARY__).Perform(task, details);
         }
 
         [Given(@"there is a ([a-zA-Z ]+)")]
@@ -75,7 +81,8 @@ namespace SpecSalad.Steps
             if(TheDirector == null)
                 TheDirector = new SaladDirector();
 
-            Primary = role;
+            if (Primary.IsUndefined())
+                Primary = role;
 
             SetActor(role, new Actor(role,TheDirector));
         }
@@ -101,7 +108,7 @@ namespace SpecSalad.Steps
         [When(@"(?:I|you) (?:attempt to|was able to|were able to|did|do)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
         public void WhenTaskSpecification(string task, string details)
         {
-            GetActor("__Primary__").Perform(task, details);
+            GetActor(__PRIMARY__).Perform(task, details);
         }
 
         [When(@"the ([a-zA-Z ]+) (?:attempts to|was able to|were able to|did|does)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
@@ -113,7 +120,7 @@ namespace SpecSalad.Steps
 		[Then(@"(?:I|you) (?:can|am able to|are able to)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
 		public void ThenTaskSpecification(string task, string details)
 		{
-			GetActor("__Primary__").Perform(task, details);
+			GetActor(__PRIMARY__).Perform(task, details);
 		}
 
 		[Then(@"the ([a-zA-Z ]+) (?:can|is able to)? ([A-Z a-z_-]*)(?:[:|,] (.*))?")]
@@ -125,7 +132,7 @@ namespace SpecSalad.Steps
         [Then(@"(?:I|you) should ([^':]*) '([^']*)'")]
         public void ThenAreEqualSpecification(string theQuestion, string expectedAnswer)
         {
-            string actualAnswer = Convert.ToString(GetActor("__Primary__").Answer(theQuestion));
+            string actualAnswer = Convert.ToString(GetActor(__PRIMARY__).Answer(theQuestion));
 
             Assert.AreEqual(expectedAnswer, actualAnswer);
         }
@@ -133,7 +140,7 @@ namespace SpecSalad.Steps
         [Then(@"(?:I|you) should see ([^':]+) (?:table|with details)")]
         public void ThenAreInTable(string theQuestion, Table expectedAnswers)
         {
-            var actualAnswers = (Table) GetActor("__Primary__").Answer(theQuestion);
+            var actualAnswers = (Table) GetActor(__PRIMARY__).Answer(theQuestion);
 
             ValidateTableAnswers(actualAnswers, expectedAnswers);
         }
@@ -182,13 +189,13 @@ namespace SpecSalad.Steps
         [Then(@"(?:I|you) should ([^':]+)")]
         public void ThenAnswerQuestion(string theQuestion)
         {
-            GetActor("__Primary__").Answer(theQuestion);
+            GetActor(__PRIMARY__).Answer(theQuestion);
         }
 
         [Then(@"(?:I|you) should ([^']*) that includes: (.*)")]
         public void ThenQuestionIncludes(string theQuestion, string expectedContent)
         {
-            Assert.Contains(expectedContent, (ICollection)GetActor("__Primary__").Answer(theQuestion));
+            Assert.Contains(expectedContent, (ICollection)GetActor(__PRIMARY__).Answer(theQuestion));
         }
 
         [Then(@"the ([a-zA-Z ]+) should ([^':]*) '([^']*)'")]
@@ -209,6 +216,14 @@ namespace SpecSalad.Steps
         public void TheAnswerIncludesWithSecondaryRole(string role, string theQuestion, string expectedContent)
         {
             Assert.Contains(expectedContent, (ICollection)GetActor(role).Answer(theQuestion));
+        }
+    }
+
+    public static class ActorExtensions
+    {
+        public static bool IsUndefined(this string actorName)
+        {
+            return string.IsNullOrWhiteSpace(actorName);
         }
     }
 }

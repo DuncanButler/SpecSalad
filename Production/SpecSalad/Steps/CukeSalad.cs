@@ -13,7 +13,7 @@ namespace SpecSalad.Steps
     {
         private const string __PRIMARY__ = "__Primary__";
 
-        string Primary 
+        protected string Primary 
         {
             get
             {
@@ -27,7 +27,7 @@ namespace SpecSalad.Steps
             set { ScenarioContext.Current.Set(value,__PRIMARY__); }
         }
 
-        Actor GetActor(string name)
+        protected Actor GetActor(string name)
         {
             var key = (from k in ScenarioContext.Current.Keys where k == name select k).FirstOrDefault();
 
@@ -40,12 +40,12 @@ namespace SpecSalad.Steps
             return ScenarioContext.Current.Get<Actor>(name);
         }
 
-        void SetActor(string name, Actor actor)
+        protected void SetActor(string name, Actor actor)
         {
             ScenarioContext.Current.Set(actor, name);
         }
 
-        Director TheDirector
+        protected Director TheDirector
         {
             get
             {

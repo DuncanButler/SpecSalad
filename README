@@ -1,97 +1,155 @@
 SpecSalad
-Writing SpecFlow specifications without writing step definitions
+  -Writing SpecFlow specifications without writing step definitions
+  -A C# 4.0 implementation for SpecFlow of the Cucumber addon, CukeSalad, 
+   by Antony Marcano and Riverglide.com
 
-A C# dot net 4.0 implementation for Spec Flow of the cucumber add on CukeSalad
-by Antony Marcano and Riverglide.com
+SpecSalad allows the developer to write SpecFlow specifications without having to write step 
+definitions, avoiding the problems of maintaining large step definition files which are hard to 
+maintain and navigate through. Instead, the idea of tasks is used to identify what needs to be 
+done and roles those who will do them. This approach splits the implementation of the tests
+into manageable chunks, making them easy to maintain and navigate.
 
-SpecSalad allows the developer write SpecFlow specifications without having to write step definitions avoiding the problems of large step definition files which are hard to maintain and navigate through, instead the idea of tasks, something that can be done, and roles some who does tasks, splits the implementation into manageable chunks, making them easy to maintain and navigate.
+-------------------------------------------------------------------------------------------------------
+Language Summary
 
-Installation
-SpecSalad is available as a Nuget package which installs all the required dependencies (SpecFlow and NUnit) and 
-inserts the assembly reference into the app config file of the test project.
+   (Given | And) there is a (?<role>.*)
+   (When | And) the (?<role>.*) (attempts to | was able to | were able to | did) 
+         (?<task>.*) 
+         ( : 
+         | :(?<single value>.*) 
+         | :( (?<name>.*) = (?<value>.*) ((,)? (?<name>.*) = (?<value>.*) )* )+ 
+         )?
+   (Then | And) the (?<role>.*) should (?<task>.*) '(?<expected answer>.*)'
+   (Then | And) the (?<role>.*) should (?<task>.*) that includes: (?<expected content>.*)
+   (Then | And) the (?<role>.*) should (?<task>.*)
 
-It can be installed manually by compiling the production source, adding a reference to the SpecSalad, SpecFlow, NUnit and 
-adding the following lines to the app config file created by SpecFlow
+To define a task, the implementation class must implement SpecSalad.ApplicationTask abstract class
+To define a role, the class must inherit from SpecSalad.ApplicationRole
+-------------------------------------------------------------------------------------------------------
+
+INSTALLATION
+SpecSalad is available as a Nuget package which installs all the required dependencies 
+(SpecFlow and NUnit) and inserts the assembly reference into the app config file of the test project.
+
+It can also be installed manually by compiling the production source, adding a reference to the 
+SpecSalad, SpecFlow, NUnit and adding the following lines to the app config file created by SpecFlow
 
     <stepAssemblies>
       <stepAssembly assembly="SpecSalad" />
     </stepAssemblies>
 
+USING SPECSALAD
+SpecSalad enhances the Gurkin language with formal text to allow parsing of the features from a human 
+readable narative. The description of this formalism uses the following convention (RegEx) for brevity:
+ 
+      (a|b|..)     Required value alternatives where an empty side means optional
+      (a|b|..)?    Optional value alternatives group of values alternatives
+      a?           Optional value
+      (?<name>.*)  Identifies named value that will be captured for test construction
+     number 'N'    Identifies a capture that should become a number
 
-Using SpecSalad
-SpecSalad uses a subset of the Gurkin language to parse the feature text, items in <> are mandatory, items in [] are optional
+ --GIVEN SYNTAX--
 
-	Given <I am | you are> a <role name>
-		
-		All SpecSalad scenarios start with a given that defines the role for that scenario for example			
-			Given I am a SpecSalad developer
-			Given you are a SpecSalad developer
-	
-	<And> <I | you> <attempt to | was able to | were able to | did> <task name>[:] [single value][name value pairs [,]]
-		
-		This allows for one or more tasks to be called in order to setup the environment for the scenario
-			And I attempt to start the calculator
-			And I attempt to add the number: 1
-			And I attempt to add the number: first number '1'
-			And I attempt to add the numbers: first number '1' second number '2' third number '3'
-		
-	<When | And> <I | you> <attempt to | was able to | were able to | did> <task name>[:] [single value][name value pairs [,]]
+Given (I am | you are) a (?<role>.*)
+      
+All SpecSalad scenarios start with a Given that defines the ROLE performing that scenario. For example,
 
-		As above this allows for one or more tasks to be called, the syntax is exactly the same as the above And step
-			When I did add numbers together: first number '1' second number '2'
-			And I attempt to subtract the numbers: first number '2' second number '1'
+   Given I am a SpecSalad developer
+   Given you are a SpecSalad developer
+   
+Subsequently, one or more tasks can be called to setup the environment for the scenario.
 
-	<Then | And> <I | you> should <task name> '<expected answer>'
-	
-		Asserts that the task name returns the expected answer using the Assert.Equals comparison function
-			Then I should see the result '5'
+   And (I | you) (attempt to | was able to | were able to | did) 
+         (?<task>.*) 
+         ( : 
+         | :(?<single value>.*) 
+         | :( (?<name>.*) = (?<value>.*) ((,)? (?<name>.*) = (?<value>.*) )* )+ 
+         )?
+      
+   And I attempt to start the calculator
+   And I attempt to add the number: 1
+   And I attempt to add the number: first number '1'
+   And I attempt to add the numbers: first number '1', second number '2', third number '3'
 
-	<Then | And> <I | you> should <task name> that includes: <expected content>
-	
-		Asserts that the task returns a collection that contains the expected content item using the Assert.Contains
-		comparison function
-			Then I should see on the screen text that includes: Hello World
+ --WHEN SYNTAX--
 
-	<Then | And> <I | you> should <task name>:
+As above When allows for one or more tasks to be called, the syntax is exactly the same as 
+the above And step.
 
-		This doesn't carry out any assert, but expects the task to do some custom comparison
-			Then I should compare text
+   (When | And) (I | you) (attempt to | was able to | were able to | did) 
+         (?<task>.*) 
+         ( : 
+         | :(?<single value>.*) 
+         | :( (?<name>.*) = (?<value>.*) ((,)? (?<name>.*) = (?<value>.*) )* )+ 
+         )?
 
-for scenarios with multiple roles an additional syntax for each of the steps that allows the developer to specify the role that 
-is to perform that step is available, these steps are identical to the above with the addition of a role name.
-	
-	<Given | And> there is a <role name>
+   When I did add numbers together: first number '1' second number '2'
+   And I attempt to subtract the numbers: first number '2' second number '1'
 
-	<When | And> the <role name> <attempts to | was able to | were able to | did> <task name>[:] [single value][name value pairs [,]]
+ --THEN SYNTAX--
 
-	<Then | And> the <role name> should <task name> '<expected answer>'
-	 
-	<Then | And> the <role name> should <task name> that includes: <expected content>
+Asserts that the named task returns the expected answer using the Assert.Equals comparison function
 
-	<Then | And> the <role name> should <task name>
+   (Then | And) (I | you) should (?<task>.*) '(?<expected answer>.*)'
 
-If multiple roles are defined in the scenario, and a step without a defined role is called then the first role defined in the scenario
-is used by default.
+   Then I should see the result number '5'
 
-Task	
-To define a task, the class must inherit from the ApplicationTask base class, this base class provides the following
-additional functionality.
+Asserts that the task returns a collection that contains the expected content item using the 
+Assert.Contains comparison function
 
-	Perform_Task:
-		This method must be overridden, it is here that the role is called to carry out the specific task
+   (Then | And) (I | you) should (?<task>.*) that includes: (?<expected content>.*)
+   
+   Then I should see on the screen text that includes: Hello World
 
-	Role
-		provides access to the current scenario role
-	
-	Details
-		This object contains all the parameters provided in the scenario step, there are two methods for extracting the
-		stored data
-			Value()        - returns the first data items value
-			Value_Of(key)  - returns the value of the given key
-	
+The following syntax doesn't carry out any assert, but expects the task to do some custom comparison
+
+   (Then | And) (I | you) should (?<task>.*)
+
+   Then I should see correct result of some kind
+
+For scenarios with multiple roles, an additional syntax is available that allows the developer to map
+the role to the step. These steps are identical to the above with the addition of a role name.
+   
+   (Given | And) there is a (?<role>.*)
+
+   (When | And) the (?<role>.*) (attempts to | was able to | were able to | did) 
+         (?<task>.*) 
+         ( : 
+         | :(?<single value>.*) 
+         | :( (?<name>.*) = (?<value>.*) ((,)? (?<name>.*) = (?<value>.*) )* )+ 
+         )?
+
+   (Then | And) the (?<role>.*) should (?<task>.*) '(?<expected answer>.*)'
+    
+   (Then | And) the (?<role>.*) should (?<task>.*) that includes: (?<expected content>.*)
+
+   (Then | And) the (?<role>.*) should (?<task>.*)
+
+If multiple roles are defined in the scenario, and a step without a defined role is called then the 
+first role defined in the scenario is used by default.
+
+TASK	
+To define a task, the implementation class must implement SpecSalad.ApplicationTask abstract class, 
+which defines the following functionality.
+
+   Perform_Task:
+      This method must be overridden, it is here that the role is called to carry out the specific task
+
+   Role
+      provides access to the current scenario role
+   
+   Details
+      This object contains all the parameters provided in the scenario step, there are two methods 
+      for extracting the stored data
+
+         Value()        - returns the first data items value which, by definition of the language, 
+                          will be the first (?<role>.*)
+      
+         Value_Of(key)  - returns the value of the given key
+   
 Role
-	To define a role, the class must inherit from ApplicationRole, this base class provides the following additional 
-	functionality.
+   To define a role, the class must inherit from SpecSalad.ApplicationRole, this base class provides the 
+   following additional functionality.
 
-		StoreValue(key, value) - stores for the duration of the scenario a value with a given key
-		Retrieve(key)          - returns a previously stored value
+      StoreValue(key, value) - stores for the duration of the scenario a value with a given key
+      Retrieve(key)          - returns a previously stored value

@@ -15,14 +15,15 @@ Language Summary
    (Given | And) there is a (?<role>.*)
    (When | And) the (?<role>.*) (attempts to | was able to | were able to | did) 
          (?<task>.*) 
-         ( [,:] 
-           (?<single value>.*) 
-           |
-           ( (?<name>.*) '(?<value>.*)' ( (,)? (?<name>.*) '(?<value>.*)' )* )+ 
-         )?
-      
-   (Then | And) the (?<role>.*) should (?<task>.*) '(?<expected answer>.*)'
-   (Then | And) the (?<role>.*) should (?<task>.*) that includes: (?<expected content>.*)
+         (  [,:] 
+            (?<single_value>.*) 
+            |
+            (         (?<name>.*) '(?<value>.*)' 
+               ( (,)? (?<name>.*) '(?<value>.*)' )* 
+            )+ 
+         )?      
+   (Then | And) the (?<role>.*) should (?<task>.*) '(?<expected_answer>.*)'
+   (Then | And) the (?<role>.*) should (?<task>.*) that includes: (?<expected_content>.*)
    (Then | And) the (?<role>.*) should (?<task>.*)
 
 To define a task, the implementation class must implement SpecSalad.ApplicationTask abstract class
@@ -64,10 +65,12 @@ Subsequently, one or more tasks can be called to setup the environment for the s
 
    And (I | you) (attempt to | was able to | were able to | did) 
          (?<task>.*) 
-         ( [,:] 
-           (?<single value>.*) 
-           |
-           ( (?<name>.*) '(?<value>.*)' ( (,)? (?<name>.*) '(?<value>.*)' )* )+ 
+         (  [,:] 
+            (?<single_value>.*) 
+            |
+            (         (?<name>.*) '(?<value>.*)' 
+               ( (,)? (?<name>.*) '(?<value>.*)' )* 
+            )+ 
          )?
       
    And I attempt to start the calculator
@@ -82,10 +85,12 @@ the above And step.
 
    (When | And) (I | you) (attempt to | was able to | were able to | did) 
          (?<task>.*) 
-         ( [,:] 
-           (?<single value>.*) 
-           |
-           ( (?<name>.*) '(?<value>.*)' ( (,)? (?<name>.*) '(?<value>.*)' )* )+ 
+         (  [,:] 
+            (?<single_value>.*) 
+            |
+            (         (?<name>.*) '(?<value>.*)' 
+               ( (,)? (?<name>.*) '(?<value>.*)' )* 
+            )+ 
          )?
 
    When I did add numbers together: first number '1' second number '2'
@@ -95,14 +100,14 @@ the above And step.
 
 Asserts that the named task returns the expected answer using the Assert.Equals comparison function
 
-   (Then | And) (I | you) should (?<task>.*) '(?<expected answer>.*)'
+   (Then | And) (I | you) should (?<task>.*) '(?<expected_answer>.*)'
 
    Then I should see the result number '5'
 
 Asserts that the task returns a collection that contains the expected content item using the 
 Assert.Contains comparison function
 
-   (Then | And) (I | you) should (?<task>.*) that includes: (?<expected content>.*)
+   (Then | And) (I | you) should (?<task>.*) that includes: (?<expected_content>.*)
    
    Then I should see on the screen text that includes: Hello World
 
@@ -119,15 +124,17 @@ the role to the step. These steps are identical to the above with the addition o
 
    (When | And) the (?<role>.*) (attempts to | was able to | were able to | did) 
          (?<task>.*) 
-         ( [,:] 
-           (?<single value>.*) 
-           |
-           ( (?<name>.*) '(?<value>.*)' ( (,)? (?<name>.*) '(?<value>.*)' )* )+ 
+         (  [,:] 
+            (?<single_value>.*) 
+            |
+            (         (?<name>.*) '(?<value>.*)' 
+               ( (,)? (?<name>.*) '(?<value>.*)' )* 
+            )+ 
          )?
 
-   (Then | And) the (?<role>.*) should (?<task>.*) '(?<expected answer>.*)'
+   (Then | And) the (?<role>.*) should (?<task>.*) '(?<expected_answer>.*)'
     
-   (Then | And) the (?<role>.*) should (?<task>.*) that includes: (?<expected content>.*)
+   (Then | And) the (?<role>.*) should (?<task>.*) that includes: (?<expected_content>.*)
 
    (Then | And) the (?<role>.*) should (?<task>.*)
 

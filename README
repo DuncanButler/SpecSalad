@@ -15,10 +15,12 @@ Language Summary
    (Given | And) there is a (?<role>.*)
    (When | And) the (?<role>.*) (attempts to | was able to | were able to | did) 
          (?<task>.*) 
-         ( : 
-         | :(?<single value>.*) 
-         | :( (?<name>.*) = (?<value>.*) ((,)? (?<name>.*) = (?<value>.*) )* )+ 
+         ( [,:] 
+           (?<single value>.*) 
+           |
+           ( (?<name>.*) '(?<value>.*)' ( (,)? (?<name>.*) '(?<value>.*)' )* )+ 
          )?
+      
    (Then | And) the (?<role>.*) should (?<task>.*) '(?<expected answer>.*)'
    (Then | And) the (?<role>.*) should (?<task>.*) that includes: (?<expected content>.*)
    (Then | And) the (?<role>.*) should (?<task>.*)
@@ -27,6 +29,8 @@ To define a task, the implementation class must implement SpecSalad.ApplicationT
 To define a role, the class must inherit from SpecSalad.ApplicationRole
 -------------------------------------------------------------------------------------------------------
 
+
+INSTALLATION
 INSTALLATION
 SpecSalad is available as a Nuget package which installs all the required dependencies 
 (SpecFlow and NUnit) and inserts the assembly reference into the app config file of the test project.
@@ -46,7 +50,6 @@ readable narative. The description of this formalism uses the following conventi
       (a|b|..)?    Optional value alternatives group of values alternatives
       a?           Optional value
       (?<name>.*)  Identifies named value that will be captured for test construction
-     number 'N'    Identifies a capture that should become a number
 
  --GIVEN SYNTAX--
 
@@ -61,9 +64,10 @@ Subsequently, one or more tasks can be called to setup the environment for the s
 
    And (I | you) (attempt to | was able to | were able to | did) 
          (?<task>.*) 
-         ( : 
-         | :(?<single value>.*) 
-         | :( (?<name>.*) = (?<value>.*) ((,)? (?<name>.*) = (?<value>.*) )* )+ 
+         ( [,:] 
+           (?<single value>.*) 
+           |
+           ( (?<name>.*) '(?<value>.*)' ( (,)? (?<name>.*) '(?<value>.*)' )* )+ 
          )?
       
    And I attempt to start the calculator
@@ -78,9 +82,10 @@ the above And step.
 
    (When | And) (I | you) (attempt to | was able to | were able to | did) 
          (?<task>.*) 
-         ( : 
-         | :(?<single value>.*) 
-         | :( (?<name>.*) = (?<value>.*) ((,)? (?<name>.*) = (?<value>.*) )* )+ 
+         ( [,:] 
+           (?<single value>.*) 
+           |
+           ( (?<name>.*) '(?<value>.*)' ( (,)? (?<name>.*) '(?<value>.*)' )* )+ 
          )?
 
    When I did add numbers together: first number '1' second number '2'
@@ -114,9 +119,10 @@ the role to the step. These steps are identical to the above with the addition o
 
    (When | And) the (?<role>.*) (attempts to | was able to | were able to | did) 
          (?<task>.*) 
-         ( : 
-         | :(?<single value>.*) 
-         | :( (?<name>.*) = (?<value>.*) ((,)? (?<name>.*) = (?<value>.*) )* )+ 
+         ( [,:] 
+           (?<single value>.*) 
+           |
+           ( (?<name>.*) '(?<value>.*)' ( (,)? (?<name>.*) '(?<value>.*)' )* )+ 
          )?
 
    (Then | And) the (?<role>.*) should (?<task>.*) '(?<expected answer>.*)'

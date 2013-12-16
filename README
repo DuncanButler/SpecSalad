@@ -4,10 +4,7 @@ Writing SpecFlow specifications without writing step definitions
 A C# dot net 4.0 implementation for Spec Flow of the cucumber add on CukeSalad
 by Antony Marcano and Riverglide.com
 
-SpecSalad allows the developer write SpecFlow specifications without having to write step definitions avoiding the problems
-of large step definition files which are hard to maintain and navigate through, instead the idea of tasks, something that 
-can be done, and roles some who does tasks, splits the implementation into manageable chunks, making them easy to maintain and
-navigate.
+SpecSalad allows the developer write SpecFlow specifications without having to write step definitions avoiding the problems of large step definition files which are hard to maintain and navigate through, instead the idea of tasks, something that can be done, and roles some who does tasks, splits the implementation into manageable chunks, making them easy to maintain and navigate.
 
 Installation
 SpecSalad is available as a Nuget package which installs all the required dependencies (SpecFlow and NUnit) and 

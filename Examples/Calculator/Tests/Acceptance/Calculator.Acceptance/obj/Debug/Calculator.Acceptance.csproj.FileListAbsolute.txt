@@ -99,3 +99,16 @@ C:\_MyCode\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\
 C:\_MyCode\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\obj\Debug\Calculator.Acceptance.dll
 C:\_MyCode\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\obj\Debug\Calculator.Acceptance.pdb
 C:\_MyCode\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\bin\Debug\nunit.framework.dll
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\obj\Debug\Calculator.Acceptance.csprojResolveAssemblyReference.cache
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\obj\Debug\Calculator.Acceptance.dll
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\obj\Debug\Calculator.Acceptance.pdb
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\bin\Debug\Calculator.Acceptance.dll.config
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\bin\Debug\Calculator.Acceptance.dll
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\bin\Debug\Calculator.Acceptance.pdb
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\bin\Debug\Calculator.dll
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\bin\Debug\nunit.framework.dll
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\bin\Debug\SpecSalad.dll
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\bin\Debug\SpecSalad.pdb
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\bin\Debug\Calculator.pdb
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Tests\Acceptance\Calculator.Acceptance\bin\Debug\nunit.framework.xml

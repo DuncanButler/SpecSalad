@@ -36,3 +36,9 @@ C:\_MyCode\SpecSalad\Examples\Calculator\Production\Calculator\bin\Debug\nunit.f
 C:\_MyCode\SpecSalad\Examples\Calculator\Production\Calculator\bin\Debug\nunit.framework.xml
 C:\_MyCode\SpecSalad\Examples\Calculator\Production\Calculator\obj\Debug\Calculator.dll
 C:\_MyCode\SpecSalad\Examples\Calculator\Production\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Production\Calculator\bin\Debug\Calculator.dll
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Production\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Production\Calculator\bin\Debug\nunit.framework.dll
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Production\Calculator\bin\Debug\nunit.framework.xml
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Production\Calculator\obj\Debug\Calculator.dll
+C:\Users\Duncan\SkyDrive\Visual Studio Projects\SpecSalad\Examples\Calculator\Production\Calculator\obj\Debug\Calculator.pdb

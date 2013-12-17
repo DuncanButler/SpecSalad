@@ -35,10 +35,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="SpecSalad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Production\SpecSalad\bin\Release\SpecSalad.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -112,6 +108,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Production\SpecSalad\SpecSalad.csproj">
+      <Project>{9608581f-6c5c-4cd5-8288-12cc46358b62}</Project>
+      <Name>SpecSalad</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Production\Calculator\Calculator.csproj">
       <Project>{0EED1077-C9B5-4948-BBC2-B27DB6DEC704}</Project>
       <Name>Calculator %28Examples\Calculator\Production\Calculator%29</Name>

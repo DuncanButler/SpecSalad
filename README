@@ -178,5 +178,6 @@ Role
    To define a role, the class must inherit from SpecSalad.ApplicationRole, this 
    base class provides the following additional functionality.
 
-      StoreValue(key, value) - stores for the duration of the scenario a value with a given key
+      StoreValue(key, value) - stores for the duration of the scenario a value 
+                               with a given key
       Retrieve(key)          - returns a previously stored value

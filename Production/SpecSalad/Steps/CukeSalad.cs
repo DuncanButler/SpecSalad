@@ -58,7 +58,7 @@ namespace SpecSalad.Steps
             set{ ScenarioContext.Current.Set(value,"Director");}
         }
 
-        [Given(@"(?:I am|you are) a ([a-zA-Z ]+)")]
+        [Given(@"(?:I am|you are) (?:a|an) ([a-zA-Z ]+)")]
         public void GivenRoleSpecification(string role)
         {
             if(TheDirector == null)
@@ -75,7 +75,7 @@ namespace SpecSalad.Steps
             GetActor(__PRIMARY__).Perform(task, details);
         }
 
-        [Given(@"there is a ([a-zA-Z ]+)")]
+        [Given(@"there is (?:a|an) ([a-zA-Z ]+)")]
         public void GivenAdditionalRoleSpecification(string role)
         {
             if(TheDirector == null)

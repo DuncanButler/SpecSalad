@@ -13,8 +13,18 @@ Scenario: calling given with the syntax I am a
 	When I attempt to do the return one task
 	Then I should see the answer '1'
 
+Scenario: calling given with the syntax I am an
+	Given I am an extra role
+	When I attempt to do the return one task
+	Then I should see the answer '1'
+
 Scenario: calling given with the syntax you are a
 	Given you are a specified role
+	When I attempt to do the return one task
+	Then I should see the answer '1'
+
+Scenario: calling given with the syntax you are an
+	Given you are an extra role
 	When I attempt to do the return one task
 	Then I should see the answer '1'
 
@@ -54,3 +64,10 @@ Scenario: using the given does syntax with multiple roles
 	And the secondary role does the return one task
 	When the secondary role does the return one task
 	Then the secondary role should see the answer '4'
+
+Scenario: using the given does syntax with multiple roles using an
+	Given I am a specified role
+	And there is an extra secondary role
+	And the extra secondary role does the return one task
+	When the extra secondary role does the return one task
+	Then the extra secondary role should see the answer '4'

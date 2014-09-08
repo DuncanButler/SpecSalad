@@ -58,6 +58,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GivenStepSyntaxOptions.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\ListContainingSpecifications.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListContainingSpecifications.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\MultipleRoles.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -90,9 +95,13 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roles\AuxiliaryRole.cs" />
+    <Compile Include="Roles\ExtraSecondaryRole.cs" />
+    <Compile Include="Roles\ListSpecification.cs" />
     <Compile Include="Roles\SecondaryRole.cs" />
+    <Compile Include="Roles\ExtraRole.cs" />
     <Compile Include="Roles\SpecifiedRole.cs" />
     <Compile Include="Roles\TableSpecification.cs" />
+    <Compile Include="Tasks\AvailableColours.cs" />
     <Compile Include="Tasks\BeAbleToRetrieveTheAnswer.cs" />
     <Compile Include="Tasks\DoTheReturnOneTask.cs" />
     <Compile Include="Tasks\DoTheReturnTask.cs" />
@@ -117,6 +126,10 @@
     <None Include="Features\BackgoundTag.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>BackgoundTag.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\ListContainingSpecifications.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ListContainingSpecifications.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\MultipleRoles.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

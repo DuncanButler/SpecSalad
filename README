@@ -13,7 +13,7 @@ them easy to maintain and navigate.
 ---------------------------------------------------------------------------------
 Language Summary
 
-   (Given | And) there is a (?<role>.*)
+   (Given | And) there is  (?<role>.*)
    (When | And) the (?<role>.*) (attempts to | was able to | were able to | did) 
          (?<task>.*) 
          (  [,:] 
@@ -62,13 +62,16 @@ the following convention (RegEx) for brevity:
 
  --GIVEN SYNTAX--
 
-Given (I am | you are) a (?<role>.*)
+Given (I am | you are) (a|an) (?<role>.*)
       
 All SpecSalad scenarios start with a Given that defines the ROLE performing that 
 scenario. For example,
 
    Given I am a SpecSalad developer
+   Given I am an Administrator
    Given you are a SpecSalad developer
+   Given you are an Administrator
+
    
 Subsequently, one or more tasks can be called to setup the environment for the 
 scenario.

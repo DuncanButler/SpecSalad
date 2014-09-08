@@ -58,7 +58,7 @@ namespace SpecSalad.Steps
             set{ ScenarioContext.Current.Set(value,"Director");}
         }
 
-        [Given(@"(?:I am|you are) a ([a-zA-Z ]+)")]
+        [Given(@"(?:I am|you are) (?:a|an) ([a-zA-Z ]+)")]
         public void GivenRoleSpecification(string role)
         {
             if(TheDirector == null)
@@ -75,7 +75,7 @@ namespace SpecSalad.Steps
             GetActor(__PRIMARY__).Perform(task, details);
         }
 
-        [Given(@"there is a ([a-zA-Z ]+)")]
+        [Given(@"there is (?:a|an) ([a-zA-Z ]+)")]
         public void GivenAdditionalRoleSpecification(string role)
         {
             if(TheDirector == null)
@@ -93,13 +93,13 @@ namespace SpecSalad.Steps
             GetActor(role).Perform(task, details);    
         }
 
-        [Given(@"(?:I|you) can see the (?:table|details) ([A-Z a-z_-]*)?")]
+        [Given(@"(?:I|you) can see the (?:table|details|list of) ([A-Z a-z_-]*)?")]
         public void GivenThereIsAList(string name, Table theTable)
         {            
             ScenarioContext.Current.Add(name, theTable);
         }
 
-        [Given(@"the ([a-zA-Z ]+) can see the (?:table|details) ([A-Z a-z_-]*)?")]
+        [Given(@"the ([a-zA-Z ]+) can see the (?:table|details|list of) ([A-Z a-z_-]*)?")]
         public void GivenRoleCanSeeList(string role, string name, Table theTable)
         {
             ScenarioContext.Current.Add(name, theTable);
@@ -145,10 +145,26 @@ namespace SpecSalad.Steps
             ValidateTableAnswers(actualAnswers, expectedAnswers);
         }
 
+        [Then(@"(?:I|you) should see a list of ([^':]+) containing")]
+        public void ThenAreInList(string theQuestion, Table expectedAnswers)
+        {
+            var actualAnswers = (Table)GetActor(__PRIMARY__).Answer(theQuestion);
+
+            ValidateTableAnswers(actualAnswers, expectedAnswers);
+        }
+
         [Then("@the ([a-zA-Z ]+) should see ([^':]+) (?:table|with details)")]
         public void ThenRoleAreInTable(string role, string theQuestion, Table expectedAnswers)
         {
             var actualAnswers = (Table) GetActor(role).Answer(theQuestion);
+
+            ValidateTableAnswers(actualAnswers, expectedAnswers);
+        }
+
+        [Then("@the ([a-zA-Z ]+) should see a list of ([^':]+) containing")]
+        public void ThenRoleAreInList(string role, string theQuestion, Table expectedAnswers)
+        {
+            var actualAnswers = (Table)GetActor(role).Answer(theQuestion);
 
             ValidateTableAnswers(actualAnswers, expectedAnswers);
         }

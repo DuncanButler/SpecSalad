@@ -4,6 +4,9 @@
 build/
 [Bb]in/
 [Oo]bj/
+[Dd]bug/
+.vs/
+*.dll
 *.suo
 *.sln.cache
 _ReSharper.*/
@@ -21,3 +24,23 @@ _ReSharper.*/
 
 
 
+/Examples/Calculator/Production/Calculator/obj/Debug/Calculator.dll
+/Examples/Calculator/Production/Calculator/obj/Debug/Calculator.pdb
+/Examples/Calculator/Production/Calculator/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/Examples/Calculator/Production/Calculator/obj/Debug/Calculator.csproj.FileListAbsolute.txt
+/Examples/Calculator/Production/Calculator/obj/Debug/Calculator.dll
+/Examples/Calculator/Production/Calculator/obj/Debug/Calculator.pdb
+/Examples/Calculator/Production/Calculator/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/Examples/Calculator/Tests/Acceptance/Calculator.Acceptance/obj/Debug/Calculator.Acceptance.csproj.FileListAbsolute.txt
+/Examples/Calculator/Tests/Acceptance/Calculator.Acceptance/obj/Debug/Calculator.Acceptance.dll
+/Examples/Calculator/Tests/Acceptance/Calculator.Acceptance/obj/Debug/Calculator.Acceptance.pdb
+/Examples/Calculator/Tests/Acceptance/Calculator.Acceptance/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/Examples/Calculator/Tests/Unit/Calculator.Specifications/bin/Debug/Calculator.dll
+/Examples/Calculator/Tests/Unit/Calculator.Specifications/bin/Debug/Calculator.pdb
+/Examples/Calculator/Tests/Unit/Calculator.Specifications/bin/Debug/Calculator.Specifications.dll
+/Examples/Calculator/Tests/Unit/Calculator.Specifications/bin/Debug/Calculator.Specifications.pdb
+/Examples/Calculator/Tests/Unit/Calculator.Specifications/obj/Debug/Calculator.Specifications.csproj.FileListAbsolute.txt
+/Examples/Calculator/Tests/Unit/Calculator.Specifications/obj/Debug/Calculator.Specifications.dll
+/Examples/Calculator/Tests/Unit/Calculator.Specifications/obj/Debug/Calculator.Specifications.pdb
+/Examples/Calculator/Tests/Unit/Calculator.Specifications/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/SpecSalad.sln.DotSettings.user
